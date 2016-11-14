@@ -1,5 +1,5 @@
 import { series, parallel, src } from 'gulp'
-import gclean from 'gulp-clean'
+import del from 'del'
 import gitbook from './scripts/gitbook'
 import mdlint from './scripts/gulp-lint-markdown'
 import plugins from './plugins.json'
@@ -24,7 +24,7 @@ export const generate = () => gitbook('build', ['.', 'gh-pages'])()
 
 export const build = series(install, generate)
 export const deploy = parallel(deployGhPages)
-export const clean = () => src(['gh-pages', 'wiki', '_book']).pipe(gclean())
+export const clean = () => del(['gh-pages', 'wiki', '_book'])
 
 export const all = series(build, deploy)
 

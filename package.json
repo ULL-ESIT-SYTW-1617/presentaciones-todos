@@ -15,7 +15,7 @@
     "serve": "gulp serve",
     "lint": "gulp lint",
     "index": "gulp index",
-    "postinstall": "node node_modules/gitbook-cli/bin/gitbook.js install",
+    "postinstall": "gulp install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -40,11 +40,11 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "6.5.0",
     "babel-register": "6.14.0",
+    "del": "^2.2.2",
     "fs-promise": "0.5.0",
     "gh-pages": "0.11.0",
     "gitbook": "^3.2.2",
     "gulp": "gulpjs/gulp#4.0",
-    "gulp-clean": "0.3.2",
     "lodash": "4.16.2",
     "markdown-table": "^1.0.0",
     "markdownlint": "^0.3.1",
