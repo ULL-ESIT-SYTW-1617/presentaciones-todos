@@ -19,8 +19,12 @@ import deployGhPages from './scripts/deploy-gh-pages'
 
 // Mapear comandos de gitbook al gulp
 export const install = () => gitbook('install')()
-export const serve = () => gitbook('serve')({port: 8080})
 export const generate = () => gitbook('build', ['.', 'gh-pages'])()
+
+// Ojo, a veces no funciona:
+// https://github.com/GitbookIO/gitbook/issues/1309
+// https://github.com/GitbookIO/gitbook/issues/1379
+export const serve = () => gitbook('serve')({port: 8080, open: 'true'})
 
 export const build = series(install, generate)
 export const deploy = parallel(deployGhPages)
