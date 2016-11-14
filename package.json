@@ -13,6 +13,7 @@
     "deploy": "gulp deploy",
     "clean": "gulp clean",
     "serve": "gulp serve",
+    "srv": "node node_modules/gitbook-cli/bin/gitbook.js serve '.' 'gh-pages'",
     "lint": "gulp lint",
     "index": "gulp index",
     "postinstall": "node node_modules/gitbook-cli/bin/gitbook.js install",
