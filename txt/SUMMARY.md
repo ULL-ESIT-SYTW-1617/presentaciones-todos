@@ -24,7 +24,7 @@
 
 * [Canvas](canvas/README.md)
 
-* [Angular](cloud-9/README.md)
+* [Cloud 9](cloud-9/README.md)
 
 * [Edición de vídeo](edicion-de-video/README.md)
 

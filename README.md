@@ -40,6 +40,8 @@ En este repositorio se almacenan por capítulos las distintas presentaciones de 
 
    `# 2. Patata`
 
+3. No tocar el `SUMMARY.md` a mano. Para modificarlo usar la tarea `npm run index`
+
 Para todo lo demás, ~~Mastercard~~ abran [issues](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/issues)
 
 ## Tareas de npm
@@ -48,3 +50,4 @@ Para todo lo demás, ~~Mastercard~~ abran [issues](https://github.com/ULL-ESIT-S
 * `clean`: Limpiar el repo
 * `serve`: Abre un servidor en el puerto 8080
 * `lint`: Pasa el lint a los markdown
+* `index`: Genera el `SUMMARY.md`
