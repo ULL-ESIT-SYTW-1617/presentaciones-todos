@@ -1,24 +1,52 @@
 import { series, parallel, src } from 'gulp'
 import gclean from 'gulp-clean'
+import mdlint from 'markdownlint'
+import through2 from 'through2'
+import path from 'path'
 import plugins from './plugins.json'
 
-export {default as contributors} from './scripts/contributors'
-import generateGhPages from './scripts/generate-gh-pages'
-import generateWiki from './scripts/generate-wiki'
+// Sacar la tabla que está en el README.md
+export { default as generateTable } from './scripts/generate-table'
+// Generar el SUMMARY.md
+export { default as index } from './scripts/generate-index'
+
+// Refrescar el fichero contributors
+export { default as contributors } from './scripts/contributors'
+// Abrir un live server
+export { default as serve } from './scripts/gitbook-serve'
+// Generar el libro
+import generate from './scripts/generate'
+// Desplegar en gh-pages
 import deployGhPages from './scripts/deploy-gh-pages'
-import deployWiki from './scripts/deploy-wiki'
-import serve from './scripts/gitbook-serve'
+// Instalar las dependencias del gitbook (las que están en el book.json)
 import install from './scripts/gitbook-install'
 
-export { generateGhPages, generateWiki, deployGhPages, deployWiki, serve}
-
-export const build = series(install, parallel(generateGhPages, generateWiki))
-export const deploy = parallel(deployGhPages, deployWiki)
+export const build = series(install, generate)
+export const deploy = parallel(deployGhPages)
 export const clean = () => src(['gh-pages', 'wiki', '_book']).pipe(gclean())
 
-const errorGitbook = () => console.error('Para desplegar en gitbook sólo hace falta hacer push')
+export const all = series(build, deploy)
 
-export const generateGitbook = errorGitbook
-export const deployGitbook = errorGitbook
+// Lintear los markdown
+export async function lint () {
+  src([
+    'README.md',
+    'txt/**/*.md'
+  ]).pipe(through2.obj(function obj(file, enc, next) {
+    mdlint(
+      {
+        files: [path.join(file.base, file.relative)],
+        config: {
+          MD029: {style: 'ordered'},
+          MD013: {line_length: Infinity}
+        }
+       },
+      (err, result) => {
+        let resultString = (result || '').toString()
+        if (resultString) console.log(resultString)
+        next(err, file)
+      })
+  }))
+}
 
-export default build
+export default all

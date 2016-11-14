@@ -1,5 +1,5 @@
 import gitbook from './gitbook-spawn'
 
-export default async function generateGitbook () {
+export default async function gitbookInstall () {
   await gitbook('install')
 }
