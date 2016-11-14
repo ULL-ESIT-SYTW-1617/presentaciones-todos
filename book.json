@@ -1,0 +1,13 @@
+{
+    "language": "es",
+    "author": "ULL-ESIT-SYTW-1617",
+    "email": "TODO: poner tu correo",
+    "license": "MIT",
+    "repo": "http://github.com/DanielRamosAcosta/presentaciones",
+    "ghPages": "http://DanielRamosAcosta.github.io/presentaciones",
+    "name": "presentaciones",
+    "title" : "presentaciones" ,
+    "description" : "Descripción breve del Gitbook",
+    "plugins": ["youtube", "advanced-emoji"],
+    "root": "./txt"
+}
