@@ -6,12 +6,6 @@ export default async function generateIndex () {
   const ghPath = path.resolve(__dirname, '..', require('../book.json').root)
   let gitbook = new Gitbook(ghPath)
   await gitbook.read()
-  let tb = table([
-    ['Branch', 'Commit'],
-    ['master', '0123456789abcdef'],
-    ['staging', 'fedcba9876543210']
-  ]);
-  console.log(tb)
   console.log(table(toArr(gitbook)))
 }
 
@@ -25,7 +19,7 @@ function toArr (gitbook) {
 function chapterToArr (chapt) {
   return [chapt.title,
     chapt.author,
-    `\`txt/${chapt.directory}\``,
+    `[\`${chapt.directory}\`](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/tree/master/txt/${chapt.directory})`,
     chapt.fecha,
     `[Enlace](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos/${chapt.directory})`
   ]

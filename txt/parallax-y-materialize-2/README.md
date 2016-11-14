@@ -1,4 +1,4 @@
 # Parallax y Materialize 2
 
-* Autor: Moises Yanes Carballo
+* Autor: [Moisés Yanes Carballo](https://github.com/alu0100782851)
 * Fecha: XX/XX/XXXX
