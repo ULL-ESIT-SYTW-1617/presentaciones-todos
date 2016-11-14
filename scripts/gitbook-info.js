@@ -46,7 +46,7 @@ class Chapter {
     try {
       files = await fs.readdir(path.resolve(this.baseDir, this.directory))
     } catch(err) {
-      console.log(err)
+      console.error(err)
       throw err
     }
 

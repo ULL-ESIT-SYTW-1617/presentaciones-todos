@@ -1,12 +1,12 @@
 {
-    "language": "es",
-    "author": "ULL-ESIT-SYTW-1617",
-    "license": "MIT",
-    "repo": "https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos",
-    "ghPages": "http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos",
-    "name": "presentaciones",
-    "title" : "presentaciones" ,
-    "description" : "Libro de las presentaciones de SYTW del curso 2016/17",
-    "plugins": ["youtube", "advanced-emoji"],
-    "root": "./txt"
+  "language": "es",
+  "author": "ULL-ESIT-SYTW-1617",
+  "license": "MIT",
+  "repo": "https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos",
+  "ghPages": "http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos",
+  "name": "presentaciones",
+  "title" : "presentaciones" ,
+  "description" : "Libro de las presentaciones de SYTW del curso 2016/17",
+  "plugins": ["youtube", "advanced-emoji"],
+  "root": "./txt"
 }
