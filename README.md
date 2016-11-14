@@ -38,7 +38,7 @@ En este repositorio se almacenan por capítulos las distintas presentaciones de 
 1. En el README de cada uno, tiene que haber un `#` al principio con el título de la presentación, y dos listas (`*`) con el autor y la fecha.
 2. Cada subcapítulo empieza con un `#`, y tiene que tener un número. El formato es `# <número>. <título>`. Por ejemplo:
 
-   `# 2. Patata`.
+   `# 2. Patata`
 
 Para todo lo demás, ~~Mastercard~~ abran [issues](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/issues)
 
