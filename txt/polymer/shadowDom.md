@@ -1,0 +1,1 @@
+TODOO shadow dom y capturas
