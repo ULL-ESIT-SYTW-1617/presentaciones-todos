@@ -2,7 +2,7 @@
 
 Esta nueva palabra clave forma parte del estándar, pero aún no ha sido implenetado por V8 de forma nativa.
 
-Import funciona en definitiva como un `require`, pero a bajo nivel cambia mucho respecto a `commonjs`.
+Import funciona en definitiva como un `require`, pero a bajo nivel cambia mucho respecto a `CommonJS`.
 
 ## Importar una variable
 

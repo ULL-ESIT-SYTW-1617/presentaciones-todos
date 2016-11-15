@@ -4,7 +4,7 @@ Esta nueva característica de JavaScript nos permite definir cómo iteramos sobr
 
 ```JavaScript
 function* miFuncionIteradora(){
-  yiled 'Hola!'
+  yield 'Hola!'
   yield 'Que'
   yield 'Tal'
 }
@@ -41,7 +41,7 @@ console.log(sequence.next().value)
 
 ## Complentación con bucles
 
-Cuando instanciamos un objecto, podemos definir la clave `Symbol.iterator` como una función iteradora. Sería como el `def each |i|` de Ruby. Por ejemplo, esta clase va retornando de forma alternativa los elementos de dos arrays:
+Cuando instanciamos un objecto, podemos definir la clave `Symbol.iterator` como una función iteradora. Sería como el `def each do |i|` de Ruby. Por ejemplo, esta clase va retornando de forma alternativa los elementos de dos arrays:
 
 ```JavaScript
 class Join {
@@ -67,7 +67,7 @@ for (let element of join) {
 
 En el `console.log` saldría:
 
-```
+```JavaScript
 1
 uno
 2

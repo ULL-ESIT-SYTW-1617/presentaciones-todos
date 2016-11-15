@@ -28,7 +28,7 @@ Mediante el uso de callbacks, nos queda un código a muy anidado, o sea, un [cal
 
 ## Usando promesas
 
-```
+```JavaScript
 const fs = require('fs-promise')
 
 fs.readFile('README.md').then(data => {
@@ -43,6 +43,8 @@ fs.readFile('README.md').then(data => {
     ]
     Promise.all(promises).then(() => {
       console.log('Hecho')
+    }).catch(err => {
+      throw err
     })
   }).catch(err => {
     throw err
@@ -100,7 +102,7 @@ async function asyncFunc() {
   return 'Hecho'
 }
 
-asyncFunc().then(console.log)
+asyncFunc().then(console.log).catch(console.error)
 ```
 
 Una función asíncrona siempre devuelve una promesa, que se resuelve con el `return` y se rechaza mediante un `throw`.

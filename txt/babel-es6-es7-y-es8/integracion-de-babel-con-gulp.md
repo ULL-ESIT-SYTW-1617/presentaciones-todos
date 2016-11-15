@@ -16,5 +16,4 @@ export default async function dir () {
 
 Esto nos creará la tarea por defecto llamada `dir`. Si queremos exportar otras tareas, simplemente hacemos `export function <nombretarea>` o incluso `export const tarea = () => src(...).pipe(...)`.
 
-
 [Ejemplo de un Gulpfile usando Babel](https://gist.github.com/CodeTheory/cc7d79d1dad0622a9f9c)

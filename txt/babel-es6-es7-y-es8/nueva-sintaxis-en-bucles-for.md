@@ -2,7 +2,7 @@
 
 Antiguamente, se usaba la palabra clave `in` para iterar sobre un array:
 
-```
+```JavaScript
 function foo(array) {
   for (var i in array) {
     console.log(array[i])
@@ -15,7 +15,7 @@ foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 
 Pero declarar la variable usando `var` hace que se nos ensucie el scope que está dentro del `for`. Para solucionar esto podemos usar `let`, pero aún así al iterar tenemos que indexar el array, además de que se iteran sobre strings.
 
-```
+```JavaScript
 function foo(array) {
   for (let i in array) {
     if (i === 0) return // No sale porque i es de tipo String :(
