@@ -1,6 +1,7 @@
 # Libro de las presentaciones de SYTW curso 2016/17
 
 [![Libro en gh-pages](https://img.shields.io/badge/Book-gh--pages-brightgreen.svg?style=flat-square)](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos)
+[![Libro en Gitbook](https://img.shields.io/badge/Book-Gitbook-brightgreen.svg?style=flat-square)](https://casianorodriguezleon.gitbooks.io/presentaciones-de-sytw-2016-2017/content/)
 
 En este repositorio se almacenan por capítulos las distintas presentaciones de SYTW. En el directorio `txt` hay un directorio con el título de cada presentación.
 
