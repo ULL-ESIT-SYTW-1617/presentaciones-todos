@@ -14,6 +14,8 @@ Cada vez que se llame a `miFuncionIteradora()`, se irá devolviendo poco a poco 
 
 Veamos otro ejemplo. En esta función, se devuelven los números de Fibonacci de forma indefinida usando `yield`:
 
+{% console %}{% endconsole %}
+
 ```JavaScript
 function* fibonacci(){
   let [ a, b ] = [1, 1]
@@ -43,6 +45,8 @@ console.log(sequence.next().value)
 
 Cuando instanciamos un objecto, podemos definir la clave `Symbol.iterator` como una función iteradora. Sería como el `def each do |i|` de Ruby. Por ejemplo, esta clase va retornando de forma alternativa los elementos de dos arrays:
 
+{% console %}{% endconsole %}
+
 ```JavaScript
 class Join {
   constructor(arr1, arr2) {
@@ -63,15 +67,4 @@ let join = new Join([1, 2, 3], ['uno', 'dos', 'tres'])
 for (let element of join) {
   console.log(element)
 }
-```
-
-En el `console.log` saldría:
-
-```JavaScript
-1
-uno
-2
-dos
-3
-tres
 ```

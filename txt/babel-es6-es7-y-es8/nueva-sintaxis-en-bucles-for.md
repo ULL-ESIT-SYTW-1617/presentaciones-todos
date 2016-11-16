@@ -2,6 +2,8 @@
 
 Antiguamente, se usaba la palabra clave `in` para iterar sobre un array:
 
+{% console %}{% endconsole %}
+
 ```JavaScript
 function foo(array) {
   for (var i in array) {
@@ -14,6 +16,8 @@ foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 ```
 
 Pero declarar la variable usando `var` hace que se nos ensucie el scope que está dentro del `for`. Para solucionar esto podemos usar `let`, pero aún así al iterar tenemos que indexar el array, además de que se iteran sobre strings.
+
+{% console %}{% endconsole %}
 
 ```JavaScript
 function foo(array) {
@@ -28,6 +32,8 @@ foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 ```
 
 Usando las nuevas funciones de los arrays, como `forEach`, podemos iterar de forma sencilla sobre un array mediante el uso de una callback.
+
+{% console %}{% endconsole %}
 
 ```JavaScript
 function foo(array) {
@@ -45,6 +51,8 @@ foo(arr)
 El problema de iterar usando `forEach`, es que si queremos romper las iteraciones no podemos hacer un simple return, ya que devolveríamos la callback pero se seguiría iterando.
 
 Por último, podemos usar la nueva sintaxis del bucle for, que es con `of` en vez de `in`:
+
+{% console %}{% endconsole %}
 
 ```JavaScript
 function foo(array) {
