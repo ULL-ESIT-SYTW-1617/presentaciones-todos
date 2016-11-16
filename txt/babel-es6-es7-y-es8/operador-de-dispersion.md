@@ -13,12 +13,18 @@ let arr = [1, 2, 3, 4, 5]
 Para separarlo, podemos usar el operador de dispersión:
 
 ```JavaScript
+let arr = [1, 2, 3, 4, 5]
 let [a, b, ...rest] = arr
+console.log(a)
+console.log(b)
+console.log(rest)
 ```
+
+{% console %}{% endconsole %}
 
 En este punto, `a` valdría `1`, `b` valdría `2`, y en `res` se almacena el resto del array, es decir `[3, 4, 5]`.
 
-## Uso con objectos
+## Uso con objetos
 
 De manera similar, también podemos extraer las claves de un objecto, si por ejemplo tenemos:
 
@@ -29,7 +35,11 @@ let obj = {a: 1, b: 2, c: 3, d: 4}
 Podemos extraer algunas claves, e incluir el resto del objeto en otra variable:
 
 ```JavaScript
+let obj = {a: 1, b: 2, c: 3, d: 4}
 let {a, b, ...rest} = obj
+console.log(a)
+console.log(b)
+console.log(rest)
 ```
 
 Al hacer esto, en `a` se guardaría `1`, en `b` `2`, y en `rest` el resto del objeto, `{c: 3, d: 4}`.
@@ -53,6 +63,8 @@ foo('Jose', 'Jiménez')
 foo('Juan', 'Jerez', 658329832, 'Calle Wallaby 32, Sydney')
 ```
 
+{% console %}{% endconsole %}
+
 Con el nuevo operador, podemos añadir un tercer parámetro haciendo uso del nuevo operador:
 
 ```JavaScript
@@ -66,6 +78,8 @@ foo('Jose', 'Jiménez')
 
 foo('Juan', 'Jerez', 658329832, 'Calle Wallaby 32, Sydney')
 ```
+
+{% console %}{% endconsole %}
 
 Por lo que en la variable `other`, se almacenan en forma de array el resto de parámetros que se le pasen a la función.
 
@@ -91,6 +105,8 @@ var argv = {
 
 miPrograma(argv)
 ```
+
+{% console %}{% endconsole %}
 
 Usamos el circuito corto para construir el objeto `options`. Usando `...`, podemos sobreescribir los parámetros que se nos indiquen.
 

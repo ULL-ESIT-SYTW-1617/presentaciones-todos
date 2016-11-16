@@ -39,6 +39,8 @@ console.log(sequence.next().value)
 console.log(sequence.next().value)
 ```
 
+{% console %}{% endconsole %}
+
 ## Complentación con bucles
 
 Cuando instanciamos un objecto, podemos definir la clave `Symbol.iterator` como una función iteradora. Sería como el `def each do |i|` de Ruby. Por ejemplo, esta clase va retornando de forma alternativa los elementos de dos arrays:
@@ -65,13 +67,4 @@ for (let element of join) {
 }
 ```
 
-En el `console.log` saldría:
-
-```JavaScript
-1
-uno
-2
-dos
-3
-tres
-```
+{% console %}{% endconsole %}

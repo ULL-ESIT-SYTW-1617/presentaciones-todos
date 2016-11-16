@@ -13,6 +13,8 @@ function foo(array) {
 foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 ```
 
+{% console %}{% endconsole %}
+
 Pero declarar la variable usando `var` hace que se nos ensucie el scope que está dentro del `for`. Para solucionar esto podemos usar `let`, pero aún así al iterar tenemos que indexar el array, además de que se iteran sobre strings.
 
 ```JavaScript
@@ -26,6 +28,8 @@ function foo(array) {
 
 foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 ```
+
+{% console %}{% endconsole %}
 
 Usando las nuevas funciones de los arrays, como `forEach`, podemos iterar de forma sencilla sobre un array mediante el uso de una callback.
 
@@ -42,6 +46,8 @@ arr.foo = 'Alguien'
 foo(arr)
 ```
 
+{% console %}{% endconsole %}
+
 El problema de iterar usando `forEach`, es que si queremos romper las iteraciones no podemos hacer un simple return, ya que devolveríamos la callback pero se seguiría iterando.
 
 Por último, podemos usar la nueva sintaxis del bucle for, que es con `of` en vez de `in`:
@@ -56,3 +62,5 @@ function foo(array) {
 
 foo(['Jose', 'Juan', 'Javier', 'Jorge'])
 ```
+
+{% console %}{% endconsole %}

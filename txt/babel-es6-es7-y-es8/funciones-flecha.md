@@ -22,6 +22,8 @@ setTimeout(function print() {
 }, 200)
 ```
 
+{% console %}{% endconsole %}
+
 La manera clásica de solucionar este problema, es guardar el `this` padre en una variable, y luego acceder mediante ésta.
 
 ```JavaScript
@@ -41,6 +43,8 @@ setTimeout(function print() {
 }, 200)
 ```
 
+{% console %}{% endconsole %}
+
 Esto está considerado una práctica anti-pattern, pero lo podemos solucionar con funciones flecha.
 
 ```JavaScript
@@ -59,6 +63,8 @@ setTimeout(function print() {
 }, 200)
 ```
 
+{% console %}{% endconsole %}
+
 Ahora cuando se ejecuta, sí se incremente correctamente la variable, ya que al usar la función flecha se ha preservado el entorno de la función `Person`.
 
 ## Return en una única línea
@@ -66,16 +72,24 @@ Ahora cuando se ejecuta, sí se incremente correctamente la variable, ya que al 
 Otra característica de las funciones flecha, es devolver el valor de retorno de la última línea ejecutada, sólo en caso de que haya una línea, es decir:
 
 ```JavaScript
-() => {
+const a = () => {
   return '1'
 }
+
+a()
 ```
+
+{% console %}{% endconsole %}
 
 Lo podríamos transformar en:
 
 ```JavaScript
-() => '1'
+const a = () => '1'
+
+a()
 ```
+
+{% console %}{% endconsole %}
 
 Como podemos ver, al ser de una sola línea, también podemos quitar los corchetes.
 
@@ -125,8 +139,52 @@ var cochesSeat = coches.filter(function (c) { return c.marca === 'Seat' })
 console.log(cochesSeat)
 ```
 
+{% console %}{% endconsole %}
+
 El filtrado de la penúltima línea lo podemos resumir mucho usando una función flecha, tal que dicha línea la podemos transformar en lo siguiente:
 
 ```JavaScript
+var coches = [
+  {
+    marca: 'Volkswagen',
+    modelo: 'Golf'
+  },
+  {
+    marca: 'Volkswagen',
+    modelo: 'Tiguan'
+  },
+  {
+    marca: 'Volkswagen',
+    modelo: 'Polo'
+  },
+  {
+    marca: 'Seat',
+    modelo: 'Ibiza'
+  },
+  {
+    marca: 'Seat',
+    modelo: 'Toledo'
+  },
+  {
+    marca: 'Seat',
+    modelo: 'Cordoba'
+  },
+  {
+    marca: 'Renault',
+    modelo: 'Clio'
+  },
+  {
+    marca: 'Renault',
+    modelo: 'Megane'
+  },
+  {
+    marca: 'Renault',
+    modelo: 'Talisman'
+  }
+]
+
 let cochesSeat = coches.filter(c => c.marca === 'Seat')
+console.log(cochesSeat)
 ```
+
+{% console %}{% endconsole %}

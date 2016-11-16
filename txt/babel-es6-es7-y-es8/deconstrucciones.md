@@ -1,8 +1,8 @@
 # 4. Deconstrucciones
 
-La asignación por deconstrucción es una expresión que nos permite extrer datos de Arrays u Objectos.
+La asignación por deconstrucción es una expresión que nos permite extrer datos de Arrays u Objetos.
 
-## Uso con objectos
+## Uso con objetos
 
 Para usarlo con objetos necesitamos indicar los nombres de las claves que queramos extraer.
 
@@ -12,7 +12,6 @@ function login (username, password) {
   console.log(username)
   console.log(password)
 }
-
 
 let argv = {
   username: 'Pepe',
@@ -25,6 +24,8 @@ let { username, password } = argv
 login(username, password)
 ```
 
+{% console %}{% endconsole %}
+
 ## Uso con arrays
 
 Para usarlo con array, se usa de forma posicional:
@@ -36,7 +37,6 @@ function login (username, password) {
   console.log(password)
 }
 
-
 let argv = [
   'Pepe',
   'Patata'
@@ -47,3 +47,5 @@ let [ username, password ] = argv
 
 login(username, password)
 ```
+
+{% console %}{% endconsole %}

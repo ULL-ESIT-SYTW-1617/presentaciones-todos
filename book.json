@@ -7,6 +7,11 @@
   "name": "presentaciones",
   "title" : "presentaciones" ,
   "description" : "Libro de las presentaciones de SYTW del curso 2016/17",
-  "plugins": ["youtube", "advanced-emoji"],
+  "plugins": [
+    "advanced-emoji",
+    "collapsible-menu",
+    "js-console",
+    "youtube"
+  ],
   "root": "./txt"
 }
