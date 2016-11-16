@@ -15,23 +15,23 @@ module.exports = tareaImportante
 
 Usamos la palabra clave `default` para exportar algo por defecto, por ejemplo la función anterior:
 
-```JavaScript
+{% es6 -%}
 function tareaImportante(a, b) {
   console.log('Soy tareaImportante')
   return a + b
 }
 
 export default tareaImportante
-```
+{%- endes6 %}
 
 O incluso, lo podemos poner todo seguido:
 
-```JavaScript
+{% es6 -%}
 export default function tareaImportante(a, b) {
   console.log('Soy tareaImportante')
   return a + b
 }
-```
+{%- endes6 %}
 
 A la hora de importarlo, directamente es el objecto retornado:
 
@@ -65,7 +65,7 @@ module.exports = {
 
 Usando los nuevos módulos, podemos poner un export al lado de la declaración de cada función:
 
-```JavaScript
+{% es6 -%}
 export function parte1() {
   console.log('parte1')
 }
@@ -77,12 +77,11 @@ export function parte2() {
 export function parte3() {
   console.log('parte3')
 }
-```
+{%- endes6 %}
 
 Cuando lo vayamos a importar, tenemos que especificar qué parte, no lo podemos importar todo de golpe:
 
 ```JavaScript
-// import todo from '/.partes' no funciona!!
 import {parte1, parte2, parte3} from './partes'
 ```
 

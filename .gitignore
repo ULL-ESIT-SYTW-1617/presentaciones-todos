@@ -7,3 +7,4 @@ wiki/
 *.DS_Store
 .AppleDouble
 .LSOverride
+npm-debug.log.*

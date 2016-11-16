@@ -86,7 +86,7 @@ Por último, tenemos la nueva sintaxis, que ya está disponible en node usando l
 
 `async` se usa para declarar una función asíncrona, y `await` para esperar a que se resuelva una promesa.
 
-```JavaScript
+{% es6 -%}
 const fs = require('fs-promise')
 
 async function asyncFunc() {
@@ -103,6 +103,6 @@ async function asyncFunc() {
 }
 
 asyncFunc().then(console.log).catch(console.error)
-```
+{%- endes6 %}
 
 Una función asíncrona siempre devuelve una promesa, que se resuelve con el `return` y se rechaza mediante un `throw`.

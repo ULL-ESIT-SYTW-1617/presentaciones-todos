@@ -11,7 +11,14 @@
     "advanced-emoji",
     "collapsible-menu",
     "js-console",
-    "youtube"
+    "youtube",
+    "codetabs",
+    "es6tabs"
   ],
+  "pluginsConfig": {
+    "es6tabs": {
+      "presets": ["es2015", "stage-0"]
+    }
+  },
   "root": "./txt"
 }

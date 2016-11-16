@@ -31,7 +31,7 @@ console.log(func())
 
 Para vincular el entorno, nombramos la instancia con el operador nuevo, seguido del método.
 
-```JavaScript
+{% es6 -%}
 class Test {
   constructor () {
     this.text = 'Mi Texto'
@@ -45,11 +45,11 @@ class Test {
 let test = new Test()
 const func = test::test.getText
 console.log(func())
-```
+{%- endes6 %}
 
 Podemos resumir esto, ya que la instancia también es el mismo objeto en el que se encuentra la función:
 
-```JavaScript
+{% es6 -%}
 class Test {
   constructor () {
     this.text = 'Mi Texto'
@@ -63,4 +63,4 @@ class Test {
 let test = new Test()
 const func = ::test.getText
 console.log(func())
-```
+{%- endes6 %}

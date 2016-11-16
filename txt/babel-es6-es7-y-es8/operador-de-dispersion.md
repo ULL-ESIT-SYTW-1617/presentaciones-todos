@@ -12,6 +12,8 @@ let arr = [1, 2, 3, 4, 5]
 
 Para separarlo, podemos usar el operador de dispersión:
 
+{% console %}{% endconsole %}
+
 ```JavaScript
 let arr = [1, 2, 3, 4, 5]
 let [a, b, ...rest] = arr
@@ -19,8 +21,6 @@ console.log(a)
 console.log(b)
 console.log(rest)
 ```
-
-{% console %}{% endconsole %}
 
 En este punto, `a` valdría `1`, `b` valdría `2`, y en `res` se almacena el resto del array, es decir `[3, 4, 5]`.
 
@@ -48,6 +48,8 @@ Al hacer esto, en `a` se guardaría `1`, en `b` `2`, y en `rest` el resto del ob
 
 Esta estracción la podemos realizar en los parámetros de las funciones. Lo que se hacía normalmente era iterar sobre el objeto `arguments`, que almacena en un array los parámetros de la función.
 
+{% console %}{% endconsole %}
+
 ```JavaScript
 function foo(usuario, apellidos) {
   console.log(usuario)
@@ -63,9 +65,9 @@ foo('Jose', 'Jiménez')
 foo('Juan', 'Jerez', 658329832, 'Calle Wallaby 32, Sydney')
 ```
 
-{% console %}{% endconsole %}
-
 Con el nuevo operador, podemos añadir un tercer parámetro haciendo uso del nuevo operador:
+
+{% console %}{% endconsole %}
 
 ```JavaScript
 function foo(usuario, apellidos, ...other) {
@@ -79,13 +81,13 @@ foo('Jose', 'Jiménez')
 foo('Juan', 'Jerez', 658329832, 'Calle Wallaby 32, Sydney')
 ```
 
-{% console %}{% endconsole %}
-
 Por lo que en la variable `other`, se almacenan en forma de array el resto de parámetros que se le pasen a la función.
 
 ## Valores por defecto en un objeto
 
 El operador `...` también lo podemos usar a la hora de crear un objeto, y la principal utilidad de esto es crear unos valores por defecto para un objeto. Por ejemplo, cuando recojemos las opciones por `argv` con `minimist`, tendríamos algo así:
+
+{% console %}{% endconsole %}
 
 ```JavaScript
 function miPrograma (argv) {
@@ -105,8 +107,6 @@ var argv = {
 
 miPrograma(argv)
 ```
-
-{% console %}{% endconsole %}
 
 Usamos el circuito corto para construir el objeto `options`. Usando `...`, podemos sobreescribir los parámetros que se nos indiquen.
 

@@ -20,7 +20,7 @@ console.log(aux2)
 
 Pero ahora con `import` tenemos una sintaxis más clara:
 
-```JavaScript
+{% es6 -%}
 import _ from 'lodash'
 
 let aux1 = _.tail([1, 2, 3])
@@ -28,11 +28,11 @@ let aux2 = _.concat([1, 2], [3, 4])
 
 console.log(aux1)
 console.log(aux2)
-```
+{%- endes6 %}
 
 Incluso, podemos combinarlo con el uso de las deconstrucciones:
 
-```JavaScript
+{% es6 -%}
 import { tail, concat } from 'lodash'
 
 let aux1 = tail([1, 2, 3])
@@ -40,4 +40,4 @@ let aux2 = concat([1, 2], [3, 4])
 
 console.log(aux1)
 console.log(aux2)
-```
+{%- endes6 %}
