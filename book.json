@@ -13,7 +13,7 @@
     "js-console",
     "youtube",
     "codetabs",
-    "es6tabs"
+    "es6tabs-stage-0"
   ],
   "pluginsConfig": {
     "es6tabs": {
