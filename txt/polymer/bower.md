@@ -10,8 +10,7 @@ Una vez instalado como dependencia global, ya se podrá instalar cualquier paque
 
 Para crear un componente en Polymer es imprescindible tener bower instalado ya que mediante la inclusión de paquetes, puede ser necesario utilizar característias de otros paquetes en el elemento que se esté desarrollando. Para introducir un paquete de bower en el elemento que se está desarrollando se debe añadir la siguiente línea en el archivo html.
 
-```<link rel="import" href="../../bower_components/paper-progress/paper-progress.html">
-```
+`<link rel="import" href="../../bower_components/paper-progress/paper-progress.html">`
 
 Esta línea, añade un elemento de polymer llamado paper-progress que está diseñado para que cualquier usuario pueda añadirlo en su web component sin romper ningún tipo de derechos de autor.
 
