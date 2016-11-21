@@ -1,7 +1,6 @@
 # 1.Introducción a Polymer y sus conceptos
 
-Polymer es un proyecto open-source para el desarrollo del front-end de los sitios web mediante el uso de HTML,CSS y Javascript para la creación de Web Components. Está
-liderado por Google para trasladar el material-design desde los dispositivos móviles hacia el entorno web.  
+Polymer es un proyecto open-source para el desarrollo del front-end de los sitios web mediante el uso de HTML,CSS y Javascript para la creación de Web Components. Está liderado por Google para trasladar el material-design desde los dispositivos móviles hacia el entorno web.  
 
 ## Web Component
 
