@@ -1,6 +1,7 @@
 Cuando un elemento de Polymer creado por el usuario maneja elementos del árbol DOM se dice que el elemento está manejando el LocalDom. El DOM, es un árbol que se crea al cargar una página web y que muestra el sitio web mediante un árbol donde se encuentran las diferentes características de la web.
 
-```<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
