@@ -8,7 +8,7 @@ Para instalar vulcanize, se necesita la herramienta npm
 
 Para conseguir que todos los ficheros htmls, las hojas de estilo y los scripts que se importan y agregarlos en un único fichero html, se utiliza el siguiente comando
 
-```
+```console
 vulcanize --inline-scripts --inline-css --strip-comments \
     elements.html > elements.build.html
 ```
