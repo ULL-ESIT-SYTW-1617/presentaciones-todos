@@ -7,7 +7,7 @@ Polymer, además de trabajar con el shadow dom, también permite trabajar con lo
 
 Para acceder a los elementos del DOM de el elemento creado sólo basta con acceder mediante la utilización de la sentencia `this.$.identificador del elemento a acceder`. A continuación, se muestra un ejemplo práctico del uso del shady DOM
 
-```star-wars.html
+```html
 <link rel="import" href="bower_components/polymer/polymer.html">
 <dom-module id="star-wars">
 	<template>
