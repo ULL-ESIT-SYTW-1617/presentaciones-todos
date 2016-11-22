@@ -36,4 +36,4 @@ Uso de Vulcanize
 ```vulcanize --inline-scripts --inline-css --strip-comments \
     elements.html > elements.build.html```
 
-Además, vulcanize también puede ser añadido mediante tarea Gulp a un fichero gulpfile.
+Además, vulcanize también puede ser añadido mediante tarea Gulp a un fichero gulpfile .
