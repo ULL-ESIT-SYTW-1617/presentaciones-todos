@@ -4,7 +4,7 @@ HTML Template, es una característica fundamental para crear tu propio elemento 
 
 La estructura típica de un elemento creado por un usuario es la siguiente
 
-```
+```html
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <!-- Defines element markup -->
 <dom-module id="hello-world">
