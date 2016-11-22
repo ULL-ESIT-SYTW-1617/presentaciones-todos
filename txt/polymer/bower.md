@@ -1,4 +1,4 @@
-# 2.Bower
+# 2. Bower
 
 Bower es un gestor de paquetes destinado al desarrollo de front-end y que permite instalar paquetes de una manera similar a como se haría en el entorno de desarrolo de NodeJs. Para instalar paquetes y poder utilizar bower correctamente, se debe tener un fichero bower.json con las dependecias que se van a utilizar para el desarrollo del front-end. Para instalar bower, hay que tener Node y Npm instalado como dependecia global, una vez instalados, se procederá a la instalación de bower mediante el siguieten comando
 

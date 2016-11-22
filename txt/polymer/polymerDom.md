@@ -1,4 +1,4 @@
-# 9.API DOM Polymer
+# 9. API DOM Polymer
 
 Polymer posee una API propia para realizar todas las manipulaciones con el árbol DOM. Para manipular el DOM del elemento que se está desarrollando, se debe utilizar esta api para realizar el manejo de los nodos del mismo.
 

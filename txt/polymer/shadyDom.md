@@ -1,4 +1,4 @@
-# 8.Qué es el Shady Dom
+# 8. Qué es el Shady Dom
 
 Como ya se comentó anteriormente, el [shadow Dom](./shadowDom.md) es una de las características principales para la creación de web components pero, el uso del shadow dom si no se es un desarrollador experimentado es tedioso y complicado de usar. 
 Polymer, además de trabajar con el shadow dom, también permite trabajar con lo que se le denomina **Shady DOM**. El shady dom, permite acceder al arbol dom que se crea del componente de una manera más facil que como se haría utilizando el shadow dom.

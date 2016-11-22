@@ -1,4 +1,4 @@
-# 11.Vulcanize o vulcanizado
+# 11. Vulcanize o vulcanizado
 
 Cuando en Polymer se dispone de un fichero html donde se importa una gran cantidad de ficheros externos y se está en fase de producción, al realizarse la búsqueda de todos los ficheros importados, se produce un coste muy alto de búsqueda en el navegador. Para evitar que esto se produzca, se utiliza la herramienta del **vulcanizado** o **vulcanize**.
 La herramienta vulcanize, permite añadir todos esos ficheros html que se importan y las etiquetas `<script>` que se añaden, en un único fichero para mejorar el tiempo de búsqueda en fase de producción.

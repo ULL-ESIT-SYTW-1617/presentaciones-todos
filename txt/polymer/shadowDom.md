@@ -1,4 +1,4 @@
-# 7.Shadow DOM
+# 7. Shadow DOM
 
 Shadow DOM es la capacidad que tiene un elemento de crear un subarbol DOM a partir del árbol DOM [LocalDom](./localDom.md) que se genera a partir de este elemento. 
 La peculiaridad de este subarbol que se crea, es que no se puede acceder desde el exterior a ninguna de las partes de su código,es decir, que el shadow DOM es una manera de encapsular el código de un elemento para no ser accesible desde el exterior.
