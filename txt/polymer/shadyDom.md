@@ -32,7 +32,7 @@ Para acceder al elemento con id specie por ejemplo, habría que áñadir la sigu
 ```nombrefuncion: function(){
 	this.$.specie.style.color="#123456"
 }
-
+```
 Esto permitirá de una manera simple acceder a cualquier nodo de nuestro elemento simplemente utilizando `this.$.id` , haciendo mucho más fácil la modificación del nodo de nuestro elemento el arbol local que se crea.
 
 ### Uso del this.$$
@@ -47,7 +47,7 @@ Polymer.dom(this.$.description).appendChild(item);
 ```
 
 Polymer para crear nodos dentro de un elemento posee su propia API y tiene una serie de funciones que se detallan en [Polymer.dom](./polymerDom.md). En esta ocasión, se está creando un elemento del tipo `li` que es hijo del nodo `description` y que lo que hace es mostrar una información con respecto a lo que contiene ese elemento.
-En esta ocasión, si se quisiera utilizar la sentencia  `this.$.notes.style.color="#123456"` daría error, ya que el nodo no está creado en el template como tal sino que está creado posteriormente. Para modificar el nodo, se debe utilizar la sentencia ``this.$$("#notes").style.color = "#123456"`
+En esta ocasión, si se quisiera utilizar la sentencia  `this.$.notes.style.color="#123456"` daría error, ya que el nodo no está creado en el template como tal sino que está creado posteriormente. Para modificar el nodo, se debe utilizar la sentencia `this.$$("#notes").style.color = "#123456"`
 
 
 
