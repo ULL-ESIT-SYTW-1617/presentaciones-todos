@@ -1,4 +1,4 @@
-# Qué es un behavior
+# 10.Qué es un behavior
 
 Un behavior, es la manera de extender un custom element para compartir el código entre diferentes componentes de Polymer. Esta manera de compartir código permite añadir nuevas características al componente que se este desarrollando utilizando lo que otro desarrollador haya realizado en un componente totalmente distinto. 
 Para añadir un behavior a un elemento que se está creando, se tiene que añadir las siguientes líneas.

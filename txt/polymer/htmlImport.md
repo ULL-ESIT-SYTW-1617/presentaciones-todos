@@ -1,4 +1,4 @@
-# HTML import
+# 3.HTML import
 
 Html import es parte del modelo de creación de web components en Polymer y lo que permite es incluir documentos html en otros ficheros html. Para utilizar el html import sólo hay que añadir la siguiente línea al código de un archivo html cualquiera.
 

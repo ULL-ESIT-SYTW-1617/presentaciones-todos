@@ -1,4 +1,4 @@
-## HTML Template
+# 5.HTML Template
 
 HTML Template, es una característica fundamental para crear tu propio elemento en Polymer. Con la etiqueta `<nombreElemento></nombreElemento>` se puede llamar al elemento y acceder a todas sus característica mediante javascript. Estos elementos propios, se encuentran almacenados en otros ficheros .html que no son el **index.html**.
 
