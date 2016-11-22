@@ -29,21 +29,25 @@ Para acceder a los elementos del DOM de el elemento creado sólo basta con acced
 ```
 Para acceder al elemento con id specie por ejemplo, habría que áñadir la siguiente sentencia
 
-```nombrefuncion: function(){
+```
+  nombrefuncion: function(){
 	this.$.specie.style.color="#123456"
 }
 ```
+
+
 Esto permitirá de una manera simple acceder a cualquier nodo de nuestro elemento simplemente utilizando `this.$.id` , haciendo mucho más fácil la modificación del nodo de nuestro elemento el arbol local que se crea.
 
 ### Uso del this.$$
 
 La sentencia this.$ funciona cuando el nodo está incluído dentro del template del elemento que se esta creando. En caso de que se quiera acceder al nodo de un elemento que se cree  posteriormente dentro de una función por ejemplo, habría que añadir la sentencia `this.$$.(id del nodo)`. A continuación, se muestra un ejemplo claro de cómo funcionaría this.$$ .
 
-```nombrefuncion: function() {
-var item = document.createElement('li');
-item.innerHTML = "<b>notas:</b> <span id='notes'>su padre es Darth Vader</span>";
-Polymer.dom(this.$.description).appendChild(item);
-}
+```
+  nombrefuncion: function() {
+    var item = document.createElement('li');
+    item.innerHTML = "<b>notas:</b> <span id='notes'>su padre es Darth Vader</span>";
+    Polymer.dom(this.$.description).appendChild(item);
+  }
 ```
 
 Polymer para crear nodos dentro de un elemento posee su propia API y tiene una serie de funciones que se detallan en [Polymer.dom](./polymerDom.md). En esta ocasión, se está creando un elemento del tipo `li` que es hijo del nodo `description` y que lo que hace es mostrar una información con respecto a lo que contiene ese elemento.
