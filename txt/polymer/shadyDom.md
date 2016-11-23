@@ -36,7 +36,6 @@ Para acceder al elemento con id specie por ejemplo, habría que áñadir la sigu
 }
 ```
 
-
 Esto permitirá de una manera simple acceder a cualquier nodo de nuestro elemento simplemente utilizando `this.$.id` , haciendo mucho más fácil la modificación del nodo de nuestro elemento el arbol local que se crea.
 
 ### Uso del this.$$
