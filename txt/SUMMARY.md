@@ -43,7 +43,17 @@
 * [PhantomJS](phantomjs/README.md)
 
 * [Polymer](polymer/README.md)
-
+  * [1. Introducción a Polymer y sus conceptos](polymer/introduccion.md)
+  * [2. Bower](polymer/bower.md)
+  * [3. HTML import](polymer/htmlImport.md)
+  * [4. Qué es un custom element](polymer/customElements.md)
+  * [5. HTML Template](polymer/HtmlTemplates.md)
+  * [6. Local DOM](polymer/localDom.md)
+  * [7. Shadow DOM](polymer/shadowDom.md)
+  * [8. Qué es el Shady Dom](polymer/shadyDom.md)
+  * [9. API DOM Polymer](polymer/polymerDom.md)
+  * [10. Qué es un behavior](polymer/behaviors.md)
+  * [11. Vulcanize o vulcanizado](polymer/vulcanize.md)
 * [React](react/README.md)
 
 * [Shopify](shopify/README.md)

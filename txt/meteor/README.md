@@ -1,4 +1,4 @@
 # Meteor
 
 * Autor: [Josue Toledo Castro](https://github.com/JosueTC94)
-* Fecha: XX/XX/XXXX
+* Fecha: 09/12/2016

@@ -7,13 +7,13 @@ import plugins from './plugins.json'
 const outputDir = 'gh-pages'
 
 // Sacar la tabla que está en el README.md
-export { default as generateTable } from './scripts/generate-table'
+export generateTable from './scripts/generate-table'
 
 // Generar el SUMMARY.md
-export { default as index } from './scripts/generate-index'
+export index from './scripts/generate-index'
 
 // Refrescar el fichero contributors
-export { default as contributors } from './scripts/contributors'
+export contributors from './scripts/contributors'
 
 // Desplegar en gh-pages
 import deployGhPages from './scripts/deploy-gh-pages'
