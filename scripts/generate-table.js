@@ -10,17 +10,17 @@ export default async function generateIndex () {
 }
 
 function toArr (gitbook) {
-  let headers = ['Título', 'Autor', 'Directorio', 'Fecha', 'Enlace']
+  let headers = ['Título', 'Autor', 'Directorio', 'Fecha']
   let all = gitbook.chapters.map(chapterToArr)
   all.unshift(headers)
   return all
 }
 
 function chapterToArr (chapt) {
-  return [chapt.title,
+  return [
+    `[${chapt.title}](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos/${chapt.directory})`,
     chapt.author,
     `[\`${chapt.directory}\`](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/tree/master/txt/${chapt.directory})`,
-    chapt.fecha,
-    `[Enlace](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos/${chapt.directory})`
+    chapt.fecha
   ]
 }
