@@ -20,3 +20,6 @@ Aquí se ve un ejemplo de como se vería la misma imagen en la que se va aumenta
 
 ![http://www.topfotografia.net/wp-content/uploads/2014/08/ISO.jpg](imgs/ISO.jpg)
 [Fuente de la imagen](http://www.topfotografia.net/Fotografia/teoria-de-la-fotografia/sensibilidad-iso/sensibilidad-iso.html)
+
+## Apertura
+El último concepto que analizaremos es 
