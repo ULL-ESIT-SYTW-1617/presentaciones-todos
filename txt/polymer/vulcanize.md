@@ -12,6 +12,7 @@ Para conseguir que todos los ficheros htmls, las hojas de estilo y los scripts q
 vulcanize --inline-scripts --inline-css --strip-comments \
     elements.html > elements.build.html
 ```
+
 ## Gulp y Vulcanize
 
 Para realizar la automatización de todas estas tareas, se utiliza un fichero gulpfile con la tarea vulcanize. La tarea en el fichero gulpfile debería ser similar a las siguiente líneas
@@ -47,11 +48,13 @@ Acontinuación se muestra un ejemplo práctico que se encuentra en el siguiente 
   </body>
 </html>
 ```
+
 ```html
 <!--Elements.html-->
 <link rel="import" href="x-foo.html">
 <link rel="import" href="x-bar.html">
 ```
+
 ```html
 <!--x-foo.html-->
 <link rel="import" href="../bower_components/polymer/polymer.html">
@@ -66,6 +69,7 @@ Acontinuación se muestra un ejemplo práctico que se encuentra en el siguiente 
   </script>
 </dom-module>
 ```
+
 ```html
 <!--x-bar.html-->
 <link rel="import" href="../bower_components/polymer/polymer.html">
@@ -80,6 +84,7 @@ Acontinuación se muestra un ejemplo práctico que se encuentra en el siguiente 
   </script>
 </dom-module>
 ```
+
 El resultado al realizar el vulcanize del fichero elements.html (que es el que posee la importación de los elementos) mediante la siguiente línea `vulcanize elements.html -o elements.vulcanized.html` es el siguiente
 
 ```html

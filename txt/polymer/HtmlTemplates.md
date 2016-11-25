@@ -9,11 +9,11 @@ La estructura típica de un elemento creado por un usuario es la siguiente
 <!-- Defines element markup -->
 <dom-module id="hello-world">
     <template>
-    	<style>
-    		/*CSS rules for the element*/
-    	</style>
-        <p>Hello :)</p>
-    </template>
+      <style>
+        /*CSS rules for the element*/
+      </style>
+      <p>Hello :)</p>
+      </template>
 </dom-module>
 
 <!-- Registers custom element -->
