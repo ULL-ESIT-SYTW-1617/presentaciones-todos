@@ -51,7 +51,7 @@ class Chapter {
     }
 
     this.subChapters = files
-      .filter(c => c !== 'README.md')
+      .filter(c => c !== 'README.md' && /^.+\.md$/.test(c))
       .map(file => new SubChapter(path.join(this.baseDir, this.directory), file))
 
     await Promise.all(this.subChapters.map(sch => sch.read()))
