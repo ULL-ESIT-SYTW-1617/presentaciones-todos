@@ -8,3 +8,4 @@ wiki/
 .AppleDouble
 .LSOverride
 npm-debug.log.*
+*.out
