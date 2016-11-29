@@ -1,0 +1,4 @@
+# 4. Shopify
+
+Los plug-in de los cuales hace uso Shopify no es desarrollado por la propia empresa (que también) si no que dispone de un "market" como si de una aplicación movil se tratase con una comunidad de developers. Dicha comunidad recibe por venta de cada aplicación un 80% de los beneficios, es decir que estamos hablando de ganancias por partida doble de shopify, tanto para aquellos usuarios a los que le vente la plataforma de E-Commerce como un 20% por cada aplicación que se vende.
+Por otro lado, Shopify también tiene un modelo de negocio para diseñadores, los cuales facilitan los temas que puedes comprar.
