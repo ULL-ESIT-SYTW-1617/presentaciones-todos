@@ -45,6 +45,9 @@ Finalmente, aunque nuestra aplicación no hace nada todavía, ya la tenemos prep
 $ meteor
 ```
 
+**¡IMPORTANTE!**:
+Meteor trabaja por defecto en el puerto 3000
+
 ## Añadiendo nuevos paquetes
 Meteor tiene su propio sistema de paquetes que nos permite incluir algunos como Bootstrap sin necesidad de tener que introducir manualmente ficheros CSS y JavaScript.
 Para ello, solo tenemos que ejecutar el siguiente comando:

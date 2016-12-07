@@ -48,3 +48,5 @@ Cómo prompt se dispone el símbolo **">"**.
 En este ejemplo en concreto, hemos creado una colección Mongo llamada *Posts* dentro del directorio **lib/**, lo cual quiere decir que la colección es accesible tanto desde el cliente como desde el servidor. En las imágenes anteriores, podemos observar como podemos acceder a esta colección desde la shell de Mongo, la consola del navegador y la consola del servidor.
 
 #### ¿Si actualizamos la colección Posts con un nuevo documento desde la shell del navegador, visualizaremos los cambios desde la shell de Mongo y desde la shell del servidor?
+
+Cuando realizamos un nuevo post o modificación, la colección del cliente informa del mismo a la colección del servidor, el cual inmediatamente se pone a distribuirlo en la base de datos de Mongo y a todos los clientes conectados a la colección correspondiente.

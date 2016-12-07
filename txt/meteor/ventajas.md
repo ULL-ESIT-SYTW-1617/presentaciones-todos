@@ -15,3 +15,6 @@ Con el objetivo de evitar problemas de sincronización, Meteor carga los fichero
 
 - **No tenemos que indicar a Meteor dónde se encuentra un archivo**.
 Su sistema de búsqueda de ficheros encuentra eficientemente los recursos que se requieren sin necesidad de indicarlo manualmente.
+
+- **Los nombres de los ficheros no son importantes**
+Para Meteor lo verdaderamente importante es que el nombre de la plantilla o template esté bien definido, independientemente del fichero en el que se encuentra. 
