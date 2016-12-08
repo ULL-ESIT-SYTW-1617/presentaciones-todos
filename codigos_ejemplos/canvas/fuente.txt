@@ -1,0 +1,3 @@
+Este juego ha sido sacado de la web :
+http://juegos.canvas.ninja/
+En esta web hay un montón de ejemplos de como crear videojuegos usando canvas.
