@@ -1,9 +1,8 @@
-
 # LARAVEL
 
 Laravel es un framework de código abierto para desarrollar aplicaciones y servicios web con PHP. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el "código espagueti". Fue creado en 2011 y tiene una gran influencia de frameworks como Ruby on Rails, Sinatra y ASP.NET MVC.
 
-# Configuración previa.
+## Configuración previa
 
 * Tener un servidor web y composer
 
@@ -21,7 +20,6 @@ Una vez realizada la configuración inicial podemos comenzar con la instalación
 
 ![](./images/laravel.jpg)
 
-
 ```bash
 composer create-project --prefer-dist laravel/laravel nombre_proyecto
 ```
@@ -36,21 +34,19 @@ php artisan serve
 
 **Artisan** es el nombre de la interfaz de línea de comandos incluida en Laravel. Provee comandos útiles para el desarrollo de tu aplicación. Está impulsada por el poderoso componente Console de Symfony.
 
-
-# ¿Cómo funcion LARAVEL?
+## Cómo funciona LARAVEL
 
 ![](./images/mvc.jpg)
 
-
-#VISTAS
+## VISTAS
 
 Se encuentran dentro del directorio **resources/views** , es el resultado final que se muestra en el navegador.
 
-#RUTAS
+## RUTAS
 
 Se encuentran dentro del directorio **routes** , las rutas pueden retornar una vista aunque lo correcto es que llamen a un controlador y este sea quien retorne la vista o llame a un modelo, dependiendo si se realiza alguna petición a una base de datos.
 
-*Ejemplo de rutas: 
+*Ejemplo de rutas:
 
 ```bash
 Route::get('/', function () {
@@ -67,7 +63,7 @@ Route::get('/nosotros', 'PaginasController@nosotros');
 
 ```
 
-#CONTROLADORES
+## CONTROLADORES
 
 Se encuentran dentro del directorio **app/Http/Controllers**
 
@@ -80,7 +76,6 @@ use App\User;
 use App\Http\Controllers\Controller;
 class PaginasController extends Controller
 {
-    
     public function nosotros(){
       $nombre='Merquis';
       return view('nosotros')->with([
@@ -91,11 +86,11 @@ class PaginasController extends Controller
 }
 ```
 
-#BLADE
+## BLADE
 
 **Blade** es el motor de plantillas de **Laravel** y permite desarrollar código de forma más rápida y limpia.
 
-#MIGRACIONES
+## MIGRACIONES
 
 Podríamos decir que son un tipo de control de versiones para nuestra base de datos.
 ¿Cómo crear una migración?
@@ -112,16 +107,9 @@ php artisan migrate
 php artisan make:model Productos
 ```
 
-#ELOQUENT
+## ELOQUENT
 
 **Eloquent** es el ORM que incluye Laravel para manejar de una forma fácil y sencilla los procesos correspondientes al manejo de bases de datos en nuestro proyecto, gracias a las funciones que provee podremos realizar complejas consultas y peticiones de base de datos sin escribir una sola línea de código SQL.
-
-
-
-
-* Autor: [Merquis Jesús Cruz Veloz](https://github.com/alu0100536690)
-* Fecha: 09/12/2016
-
 
 * Autor: [Merquis Jesús Cruz Veloz](https://github.com/alu0100536690)
 * Fecha: 09/12/2016
