@@ -3,10 +3,14 @@
 ## Iron router
 
 Paquete de enrutado por excelencia de Meteor. Sencillo y potente. Permite al usuario:
-- Crear rutas sencillas
-- Crear rutas con parámetros
+
+- Crear rutas sencillas.
+
+- Crear rutas con parámetros.
+
 - Se hace cargo de filtros(acciones a algunas rutas).
-- Administrar suscripciones: definir a qué datos pueden acceder las rutas
+
+- Administrar suscripciones: definir a qué datos pueden acceder las rutas.
 
 Este paquete trabaja tanto en el servidor como en el navegador y se ha diseñado específicamente para Meteor.
 
@@ -68,9 +72,9 @@ Un aspecto muy interesante que tiene el router es una función o propiedad llama
 
 ## Mapeos de rutas a plantillas
 
-Además de construir los diseños a partir de plantillas fijas (*{{> Libro}}*), es posible controlar el <body> de nuestras vistas indicando al router que apunte a una plantilla especial que contiene un ayudante **{{> yield}}**.
+Además de construir los diseños a partir de plantillas fijas (*\{\{\> Libro \}\}*), es posible controlar el <body> de nuestras vistas indicando al router que apunte a una plantilla especial que contiene un ayudante **\{\{ \> yield \}\}**.
 
-Básicamente, {{> yield}} permite definir una zona dinámica especial que mostrará automáticamente lo que corresponde a la ruta actual. De ahí que se conozca como "route template"(**plantilla de ruta**).
+Básicamente, \{\{ \> yield \}\} permite definir una zona dinámica especial que mostrará automáticamente lo que corresponde a la ruta actual. De ahí que se conozca como "route template"(**plantilla de ruta**).
 
 ![routeTemplate]([Imgur](http://i.imgur.com/z4jvgqZ.png)
 
@@ -91,7 +95,7 @@ Router.route('/', {name: 'mostrandoLibros'})
 En primer lugar, se establece el template *baseLayout* como diseño predeterminado para todas las rutas.
 En segundo lugar, se ha creado una nueva ruta *mostrandoLibros* y se ha mapeado a */*.
 Como podemos observar además de definir la ruta */* le hemos dado un nombre: *mostrandoLibros*. El hecho de otorgar un nombre a la ruta permite utilizar algunas características de Iron Router que hacen que sea más fácil construir enlaces dentro de la aplicación.
-Entra en juego ahora el ayudante de **Spacebars**: {{ pathFor '<nombre_ruta>'}} . Este ayudante tiene por función devolver los componentes del **path** de cualquier ruta. Es realmente útil cuando, por ejemplo, cambiamos los paths de las rutas, lo cual utilizando {{pathFor '<nombre_ruta>'}} es indiferente si conocemos el nombre que le hemos asignado a dicha ruta.
+Entra en juego ahora el ayudante de **Spacebars**: \{\{ pathFor '<nombre_ruta>' \}\} . Este ayudante tiene por función devolver los componentes del **path** de cualquier ruta. Es realmente útil cuando, por ejemplo, cambiamos los paths de las rutas, lo cual utilizando \{\{ pathFor '<nombre_ruta>' \}\} es indiferente si conocemos el nombre que le hemos asignado a dicha ruta.
 
 ## Mejorando nuestras rutas
 
@@ -116,6 +120,7 @@ meteor add sacha:spin
 ```
 
 *Plantilla de carga -> loading.html*
+
 ```html
 <template name="loading">
     {{> spinner}}

@@ -20,7 +20,7 @@ Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno pu
 ```html
 <template name="postAnimales">
   <div class="animales">
-    {{#each animales}}
+    {{ # each animales}}
       {{> postAnimalesItem}}
     {{/each}}
   </div>

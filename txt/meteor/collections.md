@@ -96,7 +96,7 @@ En el caso de una inserción, por ejemplo, la colección del cliente informa de 
 ```html
 <template name="postLibros">
   <div class="posts">
-    {{# each Libros}} <!--Iterador each -->
+    {{ #  each Libros}} <!--Iterador each -->
       {{> postLibroItem}}
     {{/each}}
   </div>

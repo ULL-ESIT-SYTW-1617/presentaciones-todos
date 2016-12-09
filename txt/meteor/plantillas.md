@@ -14,7 +14,7 @@ Ejemplo:
 ```html
   <template name="listaLibros">
     <div class="libros">
-        {{#each libros}}
+        {{ # each libros}}
           Nombre: {{name}}, Autor: {{autor}}
         {{/each}}
     </div>
@@ -22,14 +22,15 @@ Ejemplo:
 ```
 
 ¡IMPORTANTE!
-{{#each}} además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
+**Each** además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
 
 - **With o if/else**.
+
 Ejemplo:
 ```html                                                                
   <template name="listaLibros">               <template name="listaLibros">
     <div class="libros">                         <div class="libros">
-      {{#with libro}}                            {{#if libro}}     
+      {{ # with libro}}                            {{ # if libro}}     
         Nombre: {{name}}, Autor: {{autor}}          Nombre: {{name}}, Autor: {{autor}}       
       {{else}}                                    {{else}}
         No existe ningún libro                      No existe ningún libro  
@@ -39,10 +40,12 @@ Ejemplo:
 ```
 
 - **Unless**: Opuesto de if.
+
+
 Ejemplo:
 ```html
 <template name="pet">  
-   {{#unless dog.sleeping}}
+   {{ # unless dog.sleeping}}
       {{dog.name}} is awake!
     {{else}}
       {{dog.name}} is sleeping!
@@ -52,12 +55,12 @@ Ejemplo:
 
 ## Inclusión en plantillas y usos
 
-Básicamente se trata de llamar a otra plantilla dentro de la actual para mostrar los datos. Las inclusiones usan la sintaxis {{> templateName }}, avisando así a Meteor que debe reemplazar la inclusión por la plantilla especificada.
+Básicamente se trata de llamar a otra plantilla dentro de la actual para mostrar los datos. Las inclusiones avisan a Meteor que debe reemplazar la inclusión por la plantilla especificada.
 Ejemplo:
 
 ```html
 <template name="list">          <template name="listItem">
-  {{#each items}}                 {{name}} - {{colour}}<br>
+  {{ # each items}}                 {{name}} - {{colour}}<br>
     {{> listItem}}              </template>
   {{/each}}
 </template>
@@ -69,7 +72,7 @@ En el siguiente ejemplo llamamos a la plantilla userList pasándole datos, en es
 
 ```html
 <template name="overview">   <template name="userList">
-  {{> userList users}}          {{#each this}}
+  {{> userList users}}          {{ # each this}}
 </template>                       {{name}}<br>
                                 {{/each}}
                               </template>
@@ -79,7 +82,7 @@ En este caso, además, le pasamos nuevos parámetros distintos a los proveídos 
 ```html
 <template name="overview">                                  <template name="userList">
   {{> userList users=users title="Usurios de mi app"}}          <p>  {{ title }} </p>
-</template>                                                     {{#each users}}
+</template>                                                     {{ # each users}}
                                                                   {{name}} <br>
                                                                 {{/each}}
                                                             </template>
@@ -116,6 +119,7 @@ Tomaremos como nombre de plantilla "listLibros", por ejemplo.
 
 *Código de ayudante de plantilla listLibros.js en client/templates*
 En el caso de que los datos sean dinámicos        En el caso de que los datos sean estáticos
+
 ```javascript                             
 Template.listLibros.helpers({                     var BDLibros = [
   libros: return Libros.find();                   {
@@ -129,10 +133,11 @@ Template.listLibros.helpers({                     var BDLibros = [
 ```                     
 
 *Código de plantilla listLibros.html en client/templates*
+
 ```html
 <template name="listLibros">                       <template name="listLibrosItem">
     <div class="libros">                            <div class="libro_item">
-        {{#each libros}}                               Autor:{{autor}}, Titulo: {{titulo}}
+        {{ # each libros}}                               Autor:{{autor}}, Titulo: {{titulo}}
             {{> listLibrosItem}}                    </div>
         {{/each}}                                  </template>  
     </div>
