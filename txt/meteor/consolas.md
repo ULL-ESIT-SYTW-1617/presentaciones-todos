@@ -30,7 +30,7 @@ El acceso a esta consola se produce a través del navegador. Una forma de hacer 
 En esta consola se muestran los *console.log()* del lado del cliente.
 Cómo prompt se disponte el símbolo **">"**.
 
-Desde esta shell podemos acceder a las colecciones a las que nos hemos subscrito desde el cliente a través de MiniMongo, la implementación de MongoDB para el cliente.
+Desde esta shell podemos acceder a las colecciones a las que nos hemos suscrito desde el cliente a través de MiniMongo, la implementación de MongoDB para el cliente.
 
 ![](http://i.imgur.com/OafgEv8.png)
 

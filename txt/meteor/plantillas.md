@@ -1,4 +1,4 @@
-# 6. Plantillas en Meteor
+# 4. Plantillas en Meteor
 
 ## Spacebars
 
@@ -7,7 +7,9 @@ Spacebars es el nombre con el que conocemos el sistema de plantillas utilizado e
 En definitiva, Spacebars es HTML y 3 aspectos más: inclusiones, expresiones y bloques de ayuda(block helpers).
 
 **Bloques de ayuda en la definición de templates en Meteor**:
+
 - **Each**: Opera sobre un array o un cursor.
+
 Ejemplo:
 ```html
   <template name="listaLibros">
@@ -18,6 +20,7 @@ Ejemplo:
     </div>
   </template>
 ```
+
 ¡IMPORTANTE!
 {{#each}} además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
 
@@ -26,7 +29,7 @@ Ejemplo:
 ```html                                                                
   <template name="listaLibros">               <template name="listaLibros">
     <div class="libros">                         <div class="libros">
-      {{#with libros}}                            {{#if libros}}     
+      {{#with libro}}                            {{#if libro}}     
         Nombre: {{name}}, Autor: {{autor}}          Nombre: {{name}}, Autor: {{autor}}       
       {{else}}                                    {{else}}
         No existe ningún libro                      No existe ningún libro  
@@ -117,7 +120,7 @@ En el caso de que los datos sean dinámicos        En el caso de que los datos s
 Template.listLibros.helpers({                     var BDLibros = [
   libros: return Libros.find();                   {
 });                                                   autor: "Juan",
-                                                      titulo: "Aprendiendo Meteor"
+                                                      name: "Aprendiendo Meteor"
                                                   });
 
                                                   Template.listLibros.helpers({

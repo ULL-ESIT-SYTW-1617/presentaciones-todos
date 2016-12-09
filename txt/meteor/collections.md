@@ -1,4 +1,4 @@
-# 7. Colecciones en Meteor
+# 5. Colecciones en Meteor
 
 Aspetos que se van a tratar:
 - Colecciones como característica central de Meteor.
@@ -42,8 +42,6 @@ Una vez dentro, si quiero realizar operaciones(insertar, borrar, actualizar, etc
 PROMPT METEOR> db.posts.find();
 PROMPT METEOR> db.users.find().count();
 ```
-## Definir un Mongo Schema
-
 
 ## Cliente y Servidor
 
@@ -126,7 +124,7 @@ Template.postLibros.helpers({
 });
 ```
 
-## Publicaciones y subscripciones
+## Publicaciones y suscripciones
 
 **Paquete autopublish:** Paquete habilitado por defecto en Meteor. Básicamente hace que todas las conexiones sean compartidas entre todos los clientes conectados.
 Cuando nuestra aplicación se va consolidando es aconsejable deshabilitar este paquete, puesto que en función del cliente o la situación(privacidad, seguridad, escalabilidad) nos puede interesar determinar que colecciones se muestran y cuáles que no.
@@ -138,7 +136,7 @@ $ meteor remove autopublish
 Ahora los datos de nuestras colecciones no aparecerán en nuestra publicación.
 Para determinar que colecciones y documentos pueden ver los usuarios debemos configurar las funciones **publish()**:
 
-**¡¡¡En el servidor publicamos y en el cliente nos subscribimos a dicha publicación!!!**
+**¡¡¡En el servidor publicamos y en el cliente nos suscribimos a dicha publicación!!!**
 *Fichero server/publicaciones.js:*
 ```javascript
 Meteor.publish('libros', function(){
@@ -150,7 +148,7 @@ Meteor.publish('libros', function(){
 ```javascript
 Meteor.subscribe('libros');
 ```
-En el caso de que publiquemos una colección desde el servidor, pero no realizemos la subscripción correctamente, no visualizaremos los datos desde el cliente.
+En el caso de que publiquemos una colección desde el servidor, pero no realizemos la suscripción correctamente, no visualizaremos los datos desde el cliente.
 
 Podemos realizar publicaciones desde el servidor añadiendo filtros que vuelquen datos determinados. Podemos ver los siguientes ejemplos:
 
@@ -162,11 +160,6 @@ Meteor.publish('Libros', function(){
 });
 ```
 
-Esta metodología publicación/subscripción (**DDP, Protocolo de Datos Distribuidos**), hace referencia a lo que Meteor llama **"base de datos en todas partes"** lo cual implica lo siguiente:
+Esta metodología publicación/suscripción (**DDP, Protocolo de Datos Distribuidos**), hace referencia a lo que Meteor llama **"base de datos en todas partes"** lo cual implica lo siguiente:
   * Envío de datos actuales en bruto (**data on the wire**). Servidor envía datos en bruto al cliente y éste se ocupa de ellos y los renderiza usando los templates o plantillas.
   * El hecho de tener una copia de la base de datos en el Cliente posibilita que con MiniMongo se pueda acceder y modificar los documentos de las colecciones sin esperar al servidor (**lantecy compensation**).
-
-
-## Palabras clave
-
-Datos omniprescentes, publicación/subscripción,

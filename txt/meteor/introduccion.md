@@ -7,13 +7,13 @@ Una de sus particularidades es su integración con MongoDB (base de datos no rel
 
 - **Procotolo de datos distribuidos**: Hace referencia principalmente a la presencia de los datos en distintos entornos(tanto en el servidor como en el cliente).
 
-- **Patrón de publicación/subscripción**: Hace referencia a la política de meteor de que el servidor publique los datos y que el cliente se subscriba a dicha publicación para poder acceder a ellos.
+- **Patrón de publicación/suscripción**: Hace referencia a la política de meteor de que el servidor publique los datos y que el cliente se suscriba a dicha publicación para poder acceder a ellos.
 
 Estos aspectos permite la construcción de aplicaciones en tiempo real, evitando al usuario la implementación y la escritura de código síncrono, olvidándose de los problemas que suele llevar dicha tarea.
 
 Meteor es desarrollado por *"Meteor Development Group"*.
 
-Sus inicio remontan al aó 2012 y actualmente se encuentra en un proceso activo de desarrollo.
+Sus inicio remontan al año 2012 y actualmente se encuentra en un proceso activo de desarrollo.
 
 ## 7 principios fundamentales por los que se rige Meteor
 
@@ -61,7 +61,7 @@ Para Meteor lo verdaderamente importante es que el nombre de la plantilla o temp
 
 - **Meteor permite compartir código entre cliente y servidor.**
 
-- **El código resultando es mucho más pequeño que con otras tecnologías**.
+- **El código resultado es mucho más pequeño que con otras tecnologías**.
 
 - **Filosofía multiplataforma**. Permite a los desarrolladores construir aplicaciones para cualquier dispositivo usando el mismo código (web, iOS, Android o escritorio).
 

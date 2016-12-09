@@ -3,9 +3,11 @@
 ## Instalación
 
 Si usamos **Mac OS o GNU/Linux**, la instalación de Meteor pasa por la ejecución de la siguiente instrucción:
+
 ```bash
 $ curl https://install.meteor.com | sh
 ```
+
 Por otro lado, si usamos Windows, deberemos acceder al siguiente [enlace](https://www.meteor.com/install) y descargar el instalador.
 
 ![](http://i.imgur.com/aux89yw.png)
@@ -14,7 +16,7 @@ Por otro lado, si usamos Windows, deberemos acceder al siguiente [enlace](https:
 Una vez instalado Meteor, ya podemos utilizar la herramienta de línea de comandos **meteor** para realizar múltiples operaciones como, por ejemplo, crear una aplicación:
 
 ```bash
-$ metero create <nombre_app>
+$ meteor create <nombre_app>
 ```
 
 Posteriormente, se creará un directorio que tiene por nombre el mismo que indicamos como nombre de la aplicación, que albergará una serie de archivos y directorios iniciales:

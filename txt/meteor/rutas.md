@@ -1,4 +1,4 @@
-# 8. Rutas en Meteor
+# 7. Rutas en Meteor
 
 ## Iron router
 
@@ -16,21 +16,12 @@ Para instalarlo sólo tenemos que ejecutar el siguiente comando en la terminal:
 ```bash
 $ meteor add iron:router
 ```
+
 ## Elementos clave en el enrutamiento en Meteor:
 - **Routes**: Pieza de construcción básica del enrutamiento. Conjunto de instrucciones que le dicen a la aplicación a dónde ir y qué hacer cuando se encuentra la URL.
 - **Paths**: Dirección URL dentro de la aplicación. Dos tipos: estáticas y dinámicas. Pueden incluir parámetros de consulta.
 - **Segments**: Las diferentes partes de un path. Se encuentran separados por el delimitador */*.
 - **Hooks**: Se definen cómo aquellas acciones o procesos que se ejecutan antes, después o durante el proceso de enrutamiento. Ejemplos:
-Destacan 2 tipos principalmente:
-*onRun*:
-```javascript
-
-```
-*onBeforeAction*
-
-```javascript
-
-```
 - **Filters**: Acciones o Hooks globales para todas las rutas.
 - **Route Template**: Plantilla a la que apunta la ruta. En el caso de que no se indique una plantilla, Meteor busca una que tenga por nombre el de la ruta.
 - **Layouts**: Marco de contenido. Aquel contenido que visualizaremos siempre independientemente de la plantilla actual.
@@ -81,7 +72,7 @@ Además de construir los diseños a partir de plantillas fijas (*{{> Libro}}*), 
 
 Básicamente, {{> yield}} permite definir una zona dinámica especial que mostrará automáticamente lo que corresponde a la ruta actual. De ahí que se conozca como "route template"(**plantilla de ruta**).
 
-![routeTemplate]()
+![routeTemplate]([Imgur](http://i.imgur.com/z4jvgqZ.png)
 
 ## Configurando nuestras primeras rutas
 
@@ -105,6 +96,7 @@ Entra en juego ahora el ayudante de **Spacebars**: {{ pathFor '<nombre_ruta>'}} 
 ## Mejorando nuestras rutas
 
 Ademas de los aspectos comentados, Meteor nos ofrece posibilidades y herramientas para administrar aspectos como los siguientes:
+
 - **Tiempo de espera durante la carga de datos**: Meteor nos permite ofrecer algo de información visual de lo que pasa hasta que se cargan los datos y pueden visualizarse, tiempo en el cual el usuario espera. Para ello podemos añadir la funcionalidad **waitOn** a la configuración de nuestras rutas:
 
 ```javascript
@@ -113,6 +105,7 @@ Ademas de los aspectos comentados, Meteor nos ofrece posibilidades y herramienta
     waitOn: function() { return Meteor.subscribe('libros')}
   });
 ```
+
 Básicamente, cualquier ruta necesita subscribirse a la publicación "libros" para poder que el renderizado de las plantillas sea correcto y muestren los datos correctamente, es decir, etamos seguro de que los datos van a estar siempre disponibles para el usuario.
 
 - **Carga de datos más amena**: Además, Meteor nos permite configurar una plantilla de carga que se visualice cuando el usuario accede a una ruta y los datos se encuentren en proceso de carga y renderizado.
@@ -128,6 +121,7 @@ meteor add sacha:spin
     {{> spinner}}
 </template>
 ```
+
 *Configurando rutas y añadiendo plantilla de carga:*
 ```javascript
 Router.configure({

@@ -1,4 +1,4 @@
-# 11. Construyendo una app
+# 6. Construyendo una app
 
 ## Instalamos y creamos nuestra app
 
@@ -8,11 +8,12 @@ Podemos ver todos los pasos que tenemos que seguir para la instalación de la he
 
  Pese a que la estructura es prácticamente libre(exceptuando los directorios **client/** y **server/**, que tienen funciones muy específicas), una posible estructura podría ser la siguiente:
 
-![estructuraaconsejable]()
+![estructuraaconsejable](http://i.imgur.com/9pWEIrG.png)
 
 ## Definimos plantillas
 
-En este caso, por ejemplo, vamos a imprimir una lista de animales especificando el nombre del animal y algunas de sus características como: familia, número de patas, tipo, etc.
+En este caso, por ejemplo, vamos a imprimir una lista de animales especificando el nombre del animal y algunas de sus características como: familia, número de patas, tipo, etc. Podemos acceder al repositorio haciendo click en el siguiente [enlace](https://github.com/JosueTC94/animalesMeteor.git).
+
 Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno puede abordar las plantillas y sus estilos como guste*):
 
 *Plantilla base. Fichero templates/post_animales.html*:
@@ -74,9 +75,9 @@ Meteor.publish('ListAnimales', function()
 });
 ```
 
-## Subscripciones desde el cliente
+## Suscripciones desde el cliente
 
-Pese a que el servidor haya publicado los datos, en el cliente se debe subscribir a la publicación correspondiente:
+Pese a que el servidor haya publicado los datos, en el cliente se debe suscribir a la publicación correspondiente:
 
 ```javascript
 Meteor.subscribe('ListAnimales');
