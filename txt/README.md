@@ -25,7 +25,6 @@ Este libro contiene las presentaciones de los alumnos de Sistemas y Tecnologías
 | [React](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos/react)                                       | [Jose Lucas Ruiz González](https://github.com/alu0100785265)          | [`react`](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/tree/master/txt/react)                                       | 16/12/2016 |
 | [Shopify](http://ULL-ESIT-SYTW-1617.github.io/presentaciones-todos/shopify)                                   | [Aitor Bernal Falcón](https://github.com/Chinegua)                    | [`shopify`](https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos/tree/master/txt/shopify)                                   | 16/12/2016 |
 
-
 ## Referencias
 
 * [Página de Sistemas y Tecnologías Web en la UDV de la ULL](https://campusvirtual.ull.es/1617/course/view.php?id=1175)
