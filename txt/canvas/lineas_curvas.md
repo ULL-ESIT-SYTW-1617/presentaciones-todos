@@ -28,7 +28,7 @@ ctx.lineTo(190,90);
 ctx.stroke();
 ```
 
-- **lineWidth**: Establecer un ancho a la línea. 
+- **lineWidth**: Establecer un ancho a la línea.
 
 ```javascript
 ctx.lineWidth = 10;
@@ -48,8 +48,6 @@ ctx.lineCap ='round'
 
 Estas propiedades se deben establecer antes de llamar a stroke().
 
-
-
 En el siguiente código se aplican las funciones anteriores:
 
 ```html
@@ -68,7 +66,6 @@ En el siguiente código se aplican las funciones anteriores:
           ctx.lineCap ='round'
           ctx.stroke();
       </script>
-        
     </body>
 </html>
 ```
@@ -77,23 +74,21 @@ Elemento canvas:
 
 ![](https://s17.postimg.org/apm05d5kf/linea_canvas.png)
 
-
 ------------
 
 ## Curvas
 
 ### Arco
 
-- **arc()**: Los arcos se definen por un punto central, un radio, un ángulo inicial, un ángulo final y la dirección de dibujo. 
-Los arcos se pueden diseñar con las propiedades lineWidth, strokeStyle y lineCap.
+- **arc()**: Los arcos se definen por un punto central, un radio, un ángulo inicial, un ángulo final y la dirección de dibujo. Los arcos se pueden diseñar con las propiedades lineWidth, strokeStyle y lineCap.
 
 ![](http://www.html5canvastutorials.com/demos/tutorials/html5-canvas-arcs/html5-canvas-arcs-diagram.png)
 
 **Ejemplo 1:**
 
-Para crear una curva hemos establecido el ángulo de inicio en 0 y el ángulo final en 2 * Math.PI. 
+Para crear una curva hemos establecido el ángulo de inicio en 0 y el ángulo final en 2 * Math.PI.
 
-Los parámetros x,y definen las coordenadas x,y del centro del círculo. 
+Los parámetros x,y definen las coordenadas x,y del centro del círculo.
 
 El parámetro r define el radio del círculo.
 
@@ -101,7 +96,6 @@ El parámetro r define el radio del círculo.
 ctx.arc(x,y,r,angulo_inicio,angulo_fin)
 ctx.arc(50,50,40,0,2*Math.PI);
 ```
-
 
 **Ejemplo 2:**
 
@@ -136,18 +130,11 @@ ctx.arc(50,50,40,0,2*Math.PI);
 
 ![](https://s15.postimg.org/4qa3wn0vv/arco.png)
 
-
-
 ### Curva cuadrática
 
-- **quadraticCurveTo()**: Las curvas cuadráticas se definen por el punto medio, 
-un punto de control y un punto final. 
-Las curvas cuadráticas se pueden diseñar con las propiedades lineWidth, strokeStyle y lineCap.
-
+- **quadraticCurveTo()**: Las curvas cuadráticas se definen por el punto medio, un punto de control y un punto final. Las curvas cuadráticas se pueden diseñar con las propiedades lineWidth, strokeStyle y lineCap.
 
 ![](http://www.html5canvastutorials.com/demos/tutorials/html5-canvas-quadratic-curves/html5-canvas-quadratic-curves-diagram.png)
-
-
 
 Ejemplo:
 
@@ -173,6 +160,5 @@ Ejemplo:
   </body>
 </html>
 ```
-
 
 ![](https://s17.postimg.org/3wuov6ngf/cuadratica.png)

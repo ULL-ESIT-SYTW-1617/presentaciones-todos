@@ -1,11 +1,10 @@
 # 12. Más ejemplos y enlaces de interés
 
-
 ## Ejemplos de diseños realizados en canvas
 
 - [Cuadros animados](http://www.html5canvastutorials.com/advanced/html5-colorful-animated-tiles/)
 
-- [Efecto nieve](http://www.html5canvastutorials.com/advanced/html5-colorful-animated-tiles/) 
+- [Efecto nieve](http://www.html5canvastutorials.com/advanced/html5-colorful-animated-tiles/)
 
 - [Efecto lluvia](http://www.html5canvastutorials.com/advanced/html5-canvas-rain-effect/)
 
@@ -15,15 +14,13 @@
 
 - [Movimiento de partículas](http://www.html5canvastutorials.com/advanced/html5-canvas-colliding-particles-effect/)
 
-- [Efecto opacidad](http://www.html5canvastutorials.com/advanced/html5-canvas-bokeh-effect/) 
+- [Efecto opacidad](http://www.html5canvastutorials.com/advanced/html5-canvas-bokeh-effect/)
 
 - [Los mejores experimentos realizados con canvas](https://code.tutsplus.com/articles/21-ridiculously-impressive-html5-canvas-experiments--net-14210)
 
-
-
 ## Enlaces de interés
 
-- [Wikipedia](https://es.wikipedia.org/wiki/Canvas_(HTML)
+- [Wikipedia](https://es.wikipedia.org/wiki/Canvas_(HTML))
 
 - [Tabla de herramientas y funciones para dibujar](http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/)
 

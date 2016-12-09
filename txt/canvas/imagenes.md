@@ -1,39 +1,37 @@
 # 5. Imágenes
 
-### Funciones
+## Funciones
 
 En un elemento canvas podemos dibujar imágenes utilizando las siguientes funciones:
 
-- **drawImage()**: Este método requiere un objeto de imagen y un punto de destino. Este punto
-define la esquina superior izquierda de la imagen en relación con la esquina superior del canvas. 
+- **drawImage()**: Este método requiere un objeto de imagen y un punto de destino. Este punto define la esquina superior izquierda de la imagen en relación con la esquina superior del canvas.
 
     Dado que el método drawImage () requiere un objeto de imagen, primero debemos crear una imagen antes de instanciar 'drawImage()''.
 
-```javascript
-var img = new Image();
-img.src = 'ruta de la imagen'
-ctx.drawImage(img, 69, 50);
-```
+    ```javascript
+    var img = new Image();
+    img.src = 'ruta de la imagen'
+    ctx.drawImage(img, 69, 50);
+    ```
 
 - **Tamaño de la imagen**: Al método anterior, **drawImage**, se le añaden dos argumentos adicionales que indican la altura y el ancho (width, height) de la imagen.
 
-```javascript
-ctx.drawImage(img, 69, 50, width, height);
-```
+  ```javascript
+  ctx.drawImage(img, 69, 50, width, height);
+  ```
 
 - **Recortar la imagen**: Para recortar un rectángulo concreto de la imagen que se ha cargado se agregarán seis nuevos argumentos adicionales al método 'drawImage' que delimitarán el rectángulo que se desea mostrar.
-    - sourceX.
-    - sourceY.
-    - sourceHeight.
-    - sourceWidth.
 
-```javascript
-context.drawImage(imageObj, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
-```
+  - sourceX.
+  - sourceY.
+  - sourceHeight.
+  - sourceWidth.
 
+  ```javascript
+  context.drawImage(imageObj, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
+  ```
 
-### Ejemplo práctico
-
+## Ejemplo práctico
 
 - **Ejemplo 1**:
 
@@ -49,21 +47,19 @@ En este ejemplo se muestra la inserción de una imagen en el lienzo del dibujo c
     <script>
       var canvas = document.getElementById('myCanvas');
       var context = canvas.getContext('2d');
-      //Size 
+      //Size
       var width = 500;
       var height = 337;
-      
       var imageObj = new Image();
 
       imageObj.src = 'http://love2fly.iberia.com/wp-content/uploads/2016/04/L2F-Mar-16-pic-Spain-Canary-Islands-La-Palma-mountains-Borisov.jpg';
-  	  context.drawImage(imageObj, 69, 50, width, height);  
+      context.drawImage(imageObj, 69, 50, width, height);
     </script>
   </body>
-</html> 
+</html>
 ```
 
 ![](https://s27.postimg.org/f0lf7h4ub/la_Palma.png)
-
 
 - **Ejemplo 2**:
 
@@ -95,7 +91,7 @@ La imagen obtenida al recortar la original la colocaremos en el centro del lienz
       context.drawImage(imageObj, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
     </script>
   </body>
-</html>      
+</html>
 ```
 
 ![](https://s27.postimg.org/tp6nsb2er/recorte.png)

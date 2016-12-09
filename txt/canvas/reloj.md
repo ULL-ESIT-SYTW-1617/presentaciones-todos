@@ -1,17 +1,14 @@
-# 11. ¿Cómo dibujar un reloj en canvas?
+# 11. Cómo dibujar un reloj en canvas
 
-En el siguiente ejemplo se explicará paso a paso cómo dibujar un reloj y cómo hacerlo funcionar sincronizándolo con 
-la hora actual.
+En el siguiente ejemplo se explicará paso a paso cómo dibujar un reloj y cómo hacerlo funcionar sincronizándolo con la hora actual.
 
+## Creacion del elemento canvas
 
-### Creacion del elemento canvas
-
-Para comenzar a dibujar hay que añadir el elemento canvas en nuestro documento html mediante la etiqueta canvas y creamos un nuevo objeto 'ctx' de tipo 2d. 
+Para comenzar a dibujar hay que añadir el elemento canvas en nuestro documento html mediante la etiqueta canvas y creamos un nuevo objeto 'ctx' de tipo 2d.
 
 La variable **radius** se utilizará para establecer el radio de la circunferencia que contendrá al reloj. Este radio lo reducimos al 90% para que quede bin fijado dentro del elemento del canvas.
 
-Para dibujar la circunferencia se puede utilizar una función **drawClock** y que así quede un código más limpio y ordenado. En esta función dibujamos 
-el círculo mediante la función **arc** y lo rellenamos de color blanco.
+Para dibujar la circunferencia se puede utilizar una función **drawClock** y que así quede un código más limpio y ordenado. En esta función dibujamos el círculo mediante la función **arc** y lo rellenamos de color blanco.
 
 ```html
 <!DOCTYPE html>
@@ -39,11 +36,9 @@ function drawClock() {
 </html>
 ```
 
+## Dibujar el formato del reloj
 
-### Dibujar el formato del reloj
-
-A continuación, en el ejemplo se dibuja el borde de la circunferencia del reloj y la circunferencia central que más adelante será la encargada de mantener
- las agujas del reloj.
+A continuación, en el ejemplo se dibuja el borde de la circunferencia del reloj y la circunferencia central que más adelante será la encargada de mantener las agujas del reloj.
 
 Para ello se ha definido la función 'drawFace' que realiza lo siguiente:
 
@@ -52,7 +47,6 @@ Para ello se ha definido la función 'drawFace' que realiza lo siguiente:
 - Se definen los colores del arco, mediante el método 'addColorStop' (método para crear un efecto 3D), definiendo así el borde, el centro y el exterior del arco.
 - A continuación se define el gradiente como el estilo que se desea dar en la circunferencia exterior y seguidamente se dibuja el círculo.
 - Finalmente, se dibuja el círculo central.
-
 
 ```javascript
 function drawClock() {
@@ -82,11 +76,9 @@ function drawFace(ctx, radius) {
 }
 ```
 
+## Añadir los números al reloj
 
-### Añadir los números al reloj
-
-El siguiente paso consiste en incluir los números en la circunferencia del reloj, para ello definimos la función **drawNumbers**. 
-En ella se establece el tamaño de fuente y el tipo de letra para los números para posteriormente definir la alineación en el centro.
+El siguiente paso consiste en incluir los números en la circunferencia del reloj, para ello definimos la función **drawNumbers**. En ella se establece el tamaño de fuente y el tipo de letra para los números para posteriormente definir la alineación en el centro.
 
 Para la colocación de cada número en su lugar correcto, se establece a un 85% del radio de la circunferencia y girando cada número (pi/6).
 
@@ -115,15 +107,13 @@ function drawNumbers(ctx, radius) {
 }
 ```
 
-
-### Dibujar las agujas del reloj
+## Dibujar las agujas del reloj
 
 Para poder colocar correctamente las agujas del reloj en su posición actual se obtiene la hora mediante el objeto **Date()**.
 
-A continuación se dibuja cada una de las agujas estableciendo un porcentaje del radio para definir su tamaño. 
+A continuación se dibuja cada una de las agujas estableciendo un porcentaje del radio para definir su tamaño.
 Por ejemplo, para la aguja que marca las horas se ha definido un tamaño del 50% del radio y una anchura del 7%.
 Este método lo repetimos para cada una de las agujas del reloj, mediante la función **drawHand()** a la cual se le pasa la posición de la aguja y sus medidas.
-
 
 ```javascript
 function drawClock() {
@@ -161,23 +151,17 @@ function drawHand(ctx, pos, length, width) {
 }
 ```
 
+## Arrancar el reloj
 
-### Arrancar el reloj
-
-Finalmente, para poner en funcionamiento el reloj diseñado, se llama por intervalos a la función **drawClock**, 
-estableciendo los intervalos en 1000 milisegundos, así la función será llamada siempre en ese periodo.
+Finalmente, para poner en funcionamiento el reloj diseñado, se llama por intervalos a la función **drawClock**, estableciendo los intervalos en 1000 milisegundos, así la función será llamada siempre en ese periodo.
 
 ```javascript
 //drawClock();
 setInterval(drawClock, 1000);
 ```
 
-
-### CodePen
+## CodePen
 
 [Reloj CodePen](http://codepen.io/Nayra710/pen/pNKwLr)
-
-
-
 
 **Nota**: Los códigos de ejemplo que se muestran en este capítulo no son acumulativos, cada uno incluye lo explicado en el anterior.

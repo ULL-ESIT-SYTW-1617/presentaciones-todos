@@ -4,11 +4,9 @@ En este capítulo se abordarán distintas técnicas para realizar composiciones 
 
 Las composiciones tienen gran útilidad para el diseño de figuras, elementos, logos, etc.
 
-
-#### Sombra
+## Sombra
 
 Para añadir en canvas a un elemento una determinada sombra se utilizan las funciones: shadowColor, shadowBlur, shadowOffsetX y shadowOffsetY.
-
 
 ```html
 <!DOCTYPE HTML>
@@ -34,16 +32,16 @@ Para añadir en canvas a un elemento una determinada sombra se utilizan las func
       context.fill();
     </script>
   </body>
-</html>      
+</html>
 ```
 
 ![](https://s24.postimg.org/jpc13xi45/sombra.png)
 
+## Opacidad
 
-#### Opacidad
-
-Para definir la opacidad de los elementos se definirá la propiedad **globalAlpha** a 
+Para definir la opacidad de los elementos se definirá la propiedad **globalAlpha** a
 un número real entre 0 y 1.
+
 - 0: Completamente transparente.
 - 1: Completamente opaco.
 
@@ -70,20 +68,16 @@ un número real entre 0 y 1.
       context.fill();
     </script>
   </body>
-</html>      
+</html>
 ```
 
 ![](https://s16.postimg.org/azhm65rj9/tranparencia.png)
 
+## Región de recorte
 
+Una región de recorte permite que todo lo que dibujemos dentro de la región **clip()** quede encuadernado dentro de la misma. Así podemos incluir formas dentro de otras, esto permite dibujar personajes, logos,...
 
-#### Región de recorte
-
-Una región de recorte permite que todo lo que dibujemos dentro de la región **clip()** quede encuadernado dentro de la misma.
-Así podemos incluir formas dentro de otras, esto permite dibujar personajes, logos,... 
-
-Al terminar de dibujar es imprescindible que el contexto de canvas vuelva a su estado inicial, y así poder seguir dibujando
- fuera de la zona de recorte. Para ello utilizaremos el método **restore()**.
+Al terminar de dibujar es imprescindible que el contexto de canvas vuelva a su estado inicial, y así poder seguir dibujando fuera de la zona de recorte. Para ello utilizaremos el método **restore()**.
 
 En el siguiente ejemplo se define una zona de recorte circular y varios elementos circulares con diferentes medidas en él.
 
@@ -124,15 +118,13 @@ En el siguiente ejemplo se define una zona de recorte circular y varios elemento
       context.arc(x + offset, y + offset, radius, 0, 2 * Math.PI, false);
       context.fillStyle = '#DF7401';
       context.fill();
-      
+
       //Es importante reestablecer el dibujo para poder seguir dijuando fuera de la zona clip
       context.restore();
 
     </script>
   </body>
-</html>      
+</html>
 ```
 
 ![](https://s27.postimg.org/h35kfprb7/clip.png)
-
-
