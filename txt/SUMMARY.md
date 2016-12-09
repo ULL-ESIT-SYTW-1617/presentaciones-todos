@@ -23,7 +23,18 @@
 * [Bootstrap](bootstrap/README.md)
 
 * [Canvas](canvas/README.md)
-
+  * [1. Introducción](canvas/introduccion.md)
+  * [2. Estructura inicial](canvas/estructura_inicial.md)
+  * [3. Líneas y curvas](canvas/lineas_curvas.md)
+  * [4. Texto](canvas/texto.md)
+  * [5. Imágenes](canvas/imagenes.md)
+  * [6. Figuras y Formas geométricas](canvas/figuras_formas.md)
+  * [7. Composiciones](canvas/composiciones.md)
+  * [8. Animaciones](canvas/animaciones.md)
+  * [9. Inconvenientes](canvas/inconvenientes.md)
+  * [10. Movimiento](canvas/ojos_github.md)
+  * [11. ¿Cómo dibujar un reloj en canvas?](canvas/reloj.md)
+  * [12. Más ejemplos y enlaces de interés](canvas/referencias.md)
 * [Cloud 9](cloud-9/README.md)
 
 * [Edición de vídeo](edicion-de-video/README.md)
@@ -40,7 +51,7 @@
 
 * [Juegos en JS](juegos-en-js/README.md)
 
-* [Laravel](laravel/README.md)
+* [LARAVEL](laravel/README.md)
 
 * [Materialize](materialize/README.md)
 

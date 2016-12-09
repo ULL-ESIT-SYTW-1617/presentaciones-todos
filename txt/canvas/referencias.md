@@ -1,5 +1,4 @@
-
-# Más ejemplos y enlaces de interés
+# 12. Más ejemplos y enlaces de interés
 
 
 ## Ejemplos de diseños realizados en canvas

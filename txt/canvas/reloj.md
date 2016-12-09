@@ -1,4 +1,3 @@
-
 # 11. ¿Cómo dibujar un reloj en canvas?
 
 En el siguiente ejemplo se explicará paso a paso cómo dibujar un reloj y cómo hacerlo funcionar sincronizándolo con 

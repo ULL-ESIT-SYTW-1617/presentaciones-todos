@@ -1,4 +1,3 @@
-
 # 8. Animaciones
 
 

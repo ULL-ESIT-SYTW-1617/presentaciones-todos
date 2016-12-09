@@ -1,4 +1,3 @@
-
 # 6. Figuras y Formas geométricas
 
 #### Circulo
