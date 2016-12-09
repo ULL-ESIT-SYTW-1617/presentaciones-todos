@@ -51,7 +51,7 @@
 
 * [Juegos en JS](juegos-en-js/README.md)
 
-* [LARAVEL](laravel/README.md)
+* [Laravel](laravel/README.md)
 
 * [Materialize](materialize/README.md)
 
