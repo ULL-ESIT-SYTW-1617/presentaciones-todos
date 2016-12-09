@@ -22,7 +22,7 @@ Ejemplo:
 ```
 
 ¡IMPORTANTE!
-{{each}} además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
+{{#each}} además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
 
 - **With o if/else**.
 Ejemplo:
