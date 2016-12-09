@@ -53,6 +53,7 @@
   * [6. Construyendo una app](meteor/primera_app.md)
   * [7. Rutas en Meteor](meteor/rutas.md)
   * [8. Guía de comandos Meteor](meteor/guia_comandos.md)
+  * [9. Enlaces y recursos de interés](meteor/enlaces.md)
 * [Parallax y Materialize 2](parallax-y-materialize-2/README.md)
 
 * [PhantomJS](phantomjs/README.md)
