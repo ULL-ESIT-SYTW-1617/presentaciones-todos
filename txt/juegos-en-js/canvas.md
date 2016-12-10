@@ -86,4 +86,4 @@ Una vez hecho esto ya tendríamos dibujados nuestro lienzo y los elementos del j
 Enlaces relacionados con canvas y videojuegos:
 
 * Primer ejemplo: [Tutoriales y Códigos de creación de juegos usando canvas](http://juegos.canvas.ninja/)
-* Segundo ejemplo: [Repositorio de videjuego monstruo](https://github.com/lostdecade/simple_canvas_game.git)
+* Segundo ejemplo: [Repositorio de ejemplo de un videojuego usando canvas](https://github.com/lostdecade/simple_canvas_game.git)
