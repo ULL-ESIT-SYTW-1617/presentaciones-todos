@@ -41,7 +41,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 Este rectángulo será el marco en donde se desarrollará toda la acción de nuestro juego. Además para facilitar la creación de los elementos del juego(en nuestro ejemplo serán un rectángulo) podremos crear una función Rectángulo que tendrá como parámetro las coordenadas x, y además de un ancho y un alto:
 
 ~~~javascript
-function Rectangle(x, y, width, height) {
+function Rectangulo(x, y, width, height) {
     this.x = (x == null) ? 0 : x;
     this.y = (y == null) ? 0 : y;
     this.width = (width == null) ? 0 : width;
