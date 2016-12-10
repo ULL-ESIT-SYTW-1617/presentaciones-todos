@@ -18,7 +18,7 @@ A continuación explicaré una serie de pasos que servirán de ayuda a la hora d
 
 En primer lugar debemos de colocar el elemento canvas en nuestro archivo .html en donde queramos usarlo. Esto se hace de la siguiente forma:
 
-~~~javascript
+~~~HTML
 <canvas id="canvas" width="600" height="300" style="background:#999">
         Este texto se mostrará para los navegadores no compatibles con canvas
    </canvas>
