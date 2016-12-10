@@ -41,3 +41,103 @@ Y nos quedaría algo similar a lo siguiente:
 ***Instagram shop by Snapppt*** Esta aplicación nos permite tener un modelo de tienda que cada vez se está usando más, como es que te muestren todas las imagenes de su cuenta en instagram y puedas comprar directamente los accesorios que salen en las fotos.
 
 ![Pop_up_window](img/img10.png)
+
+## API de Shopify
+
+Para ver como trabaja la API de Shopify y entender lo sencillo que puede ser crear una aplicación para shopify haremos uso del ejemplo de manejar descuentos dentro de la aplicación, también usaremos el paquete NPM shopify-node-api.
+
+***Crear una instancia:***
+
+```javascript
+var Shopify = new shopifyAPI({
+shop: 'MYSHOP', // MYSHOP.myshopify.com
+shopify_api_key: '', // Your API key
+shopify_shared_secret: '', // Your Shared Secret
+access_token: 'token', //permanent token
+});
+```
+
+***GET***
+
+Con lo siguiente podemos obtener todos los descuentos que nuestra tienda tiene activos.
+
+```javascript
+Shopify.get('/admin/discounts.json', query_data, function(err, data, headers){
+console.log(data);
+console.log(headers); // Headers returned from request
+});
+```
+
+***POST***
+Con la siguiente sentencia podemos crear un descuento del 15% para nuestra tienda.
+
+```JSON
+var post_data = {
+  "discount": {
+    "discount_type": "percentage",
+    "value": "15.0",
+    "code": "balderdash"
+  }
+}
+```
+
+```javascript
+Shopify.post('/admin/discounts.json', post_data, function(err, data, headers){
+console.log(data);
+});
+```
+
+***Desabilitar un descuento***
+
+```javascript
+Shopify.post('/admin/discounts/#{id}/disable.json', function(err, data, headers){
+console.log(data);
+});
+```
+
+***Eliminar descuento***
+
+```javascript
+Shopify.delete('/admin/discounts/#{id}.json', function(err, data, headers){
+  console.log(data);
+});
+```
+
+## Liquid
+
+Liquid es esencial para hacer el mejor uso de Shopify, en Liquid nos podemos encontrar dos tipos de tags: De Texto y Lógicos.
+* Tags de texto (que pueden devolver texto) están envueltos por {{ llaves dobles de apertura y cierre (se ven así) }}
+* Tags lógicos (que nunca devuelven texto) están envueltos por{% llave y porcentaje de apertura y cierre (se ven así) %}
+
+***Ejemplo de if/else con Liquid***
+
+```html
+{% if user.creditcard == null %}
+   <h1>Usted bi tiene asignada tarjeta de credito</h1>
+{% endif %}
+```
+
+Esto es un simple ejemplo, teniendo un lenguaje similar a los ya frecuentados en la facultad, pero hay ejemplos mas complejos en liquid, el siguiente que voy a poner es de una mediana empresa que conozco y ha facilitado el código.
+
+```html
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}
+<div class="empty-cart__container">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="empty-cart__title text-center"><ly-as-2196376>Esta página no existe</ly-as-2196376></h1>
+    </div>
+    <div class="small-12 columns text-center">
+      <p><a href="/"><ly-as-2196377>Vuelve a la tienda</ly-as-2196377></a> <ly-as-2196378>o echa un vistazo a algunos de nuestros productos</ly-as-2196378></p>
+    </div>
+  </div>
+  <div class="title-collection column text-center">
+    <div class="row">
+      <h2 class="small-12 large-10 large-offset-1 columns"><ly-as-2196379>Nuestros productos</ly-as-2196379></h2>
+    </div>
+  </div>
+  {% include 'related-products' %}
+</div>
+```
+El ejemplo anterior, visualmente aporta lo siguiente:
+
+![Pop_up_window](img/img11.png)
