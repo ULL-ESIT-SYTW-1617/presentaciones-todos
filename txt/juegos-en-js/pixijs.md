@@ -91,8 +91,47 @@ renderer.render(stage);
 
 Con esto habremos constuido nuestro elementos canvas de 256x256 pixels y lo hemos añadido a nuestro documento HTML.
 
-La función ```autoDetectRenderer()``` elige entre la API de canvas o WebGL para renderizar los gráficos dependiendo de cual esté disponible, aunque la opción por defecto es usar WebGL, sin embargo si quieres forzar a que renderice usando la API de Canvas puedes hacer sustiyéndo el método anterior por:
+La función ```autoDetectRenderer()``` elige entre la API de canvas o WebGL para renderizar los gráficos dependiendo de cual esté disponible, aunque la opción por defecto es usar WebGL, sin embargo si quieres forzar a que renderice usando la API de Canvas puedes hacer sustiyendo el método anterior por:
 
 ~~~javascript
   renderer = new PIXI.CanvasRenderer(256, 256);
 ~~~
+
+## Sprites
+
+Los sprites son basicamente imágenes que se pueden controlar con código, se puede controlar su tamaño posición y otras propiedades que lo hacen muy útil para hacer gráficos interactivos y animados. Saber utilizar los sprites es una de las cosas más importantes a la hora de desarrollar juegos con Pixi.
+
+Este framework nos permite tres formas de crear los sprite:
+
+1. A partir de una imagen.
+2. A partir de una sub-imagen de un conjuto de imagenes denominado tileset(contiene todas las imágenes que necesitamos en nuestro juego).
+3. A partir de una textura atlas(un fichero JSON que define el tamñano y la posición de una imagen en un tileset).
+
+Para poder usar una imagen como sprite primero Pixi debe renderizarla en la GPU mediante la utilización de la API de WebGL, para que se pase a un formato con el que la GPU pueda trabajar,  la imagen resultante de este proceso se denomina textura. Para hacer que todo funcione de forma eficiente Pixi usa una caché de texturas donde almacena y referencia todos las texturas que van a necesitar nuestros sprites.
+
+Lo primero que debemos hacer para poder crear un sprite es cargar la imagen con la que deseamos crear nuestro sprite y una vez cargada covertirla en una textura esto se hace de la siguiente forma:
+
+~~~javascript
+PIXI.loader
+.add("images/anyImage.png")
+.load(setup);
+
+function setup() {
+  var sprite = new PIXI.Sprite(
+    PIXI.loader.resources["images/anyImage.png"].texture
+  );
+}
+~~~
+
+Una vez cargada una imagen y usada para crear un sprite debemos hacer dos cosas para que sea visible en el canvas:
+
+1. Añadir el sprite al Pixi stage(contenedor donde cargaremos los gráficos de nuestro juego).
+~~~javascript
+  stage.addChild(sprite);
+~~~
+2. Llamar al renderizador de Pixi para que renderice el stage:
+~~~javascript
+  renderer.render(stage);
+~~~
+
+Ante de hacer los dos pasos anteriores podríamos haberle cambiado propiedades al sprite:
