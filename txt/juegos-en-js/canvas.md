@@ -24,7 +24,7 @@ En primer lugar debemos de colocar el elemento canvas en nuestro archivo .html e
    </canvas>
 ~~~
 
-Inicialmente el canvas está en blanco y para poder acceder a el para poder pintar dentro debemos de acceder al contexto de renderizado para así poder invocar a los distintos métodos que nos permitan dibujar dentro del canvas:  
+Inicialmente el canvas está en blanco y para poder acceder a el para poder pintar dentro debemos de acceder al contexto de renderizado para así poder invocar a los distintos métodos que nos permitan dibujar dentro del canvas:
 
 ~~~javascript
   canvas = document.getElementById('canvas');

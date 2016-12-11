@@ -125,13 +125,64 @@ function setup() {
 
 Una vez cargada una imagen y usada para crear un sprite debemos hacer dos cosas para que sea visible en el canvas:
 
-1. Añadir el sprite al Pixi stage(contenedor donde cargaremos los gráficos de nuestro juego).
+* Añadir el sprite al Pixi stage(contenedor donde cargaremos los gráficos de nuestro juego).
+
 ~~~javascript
   stage.addChild(sprite);
 ~~~
-2. Llamar al renderizador de Pixi para que renderice el stage:
+
+* Llamar al renderizador de Pixi para que renderice el stage.
+
 ~~~javascript
   renderer.render(stage);
 ~~~
 
 Ante de hacer los dos pasos anteriores podríamos haberle cambiado propiedades al sprite:
+
+* Se puede posicionarlo asignándole unas coordenadas x e y:
+
+  ~~~javascript
+  sprite.x = 96;
+  sprite.y = 96;
+
+  // También se puede hacer así
+  sprite.position.set(x, y)
+  ~~~
+* Cambiarle el tamaño:
+
+  ~~~javascript
+  sprite.width = 80;
+  sprite.height = 120;
+  ~~~
+
+* Hacer que rote:
+
+~~~javascript
+  sprite.rotation = 0.5;
+~~~
+
+Para hacer que nuestro sprite se mueva debemos de crear una función que actúe como un bucle usando requestAnimationFrame, esta función recibe el nombre de gameloop, y todo el código que pongamos dentro de está función será actualizada 60 veces por segundo. Un ejemplo sería:
+
+~~~javascript
+function gameLoop() {
+
+  //Loop this function at 60 frames per second
+  requestAnimationFrame(gameLoop);
+
+  //Move the cat 1 pixel to the right each frame
+  sprite.x += 1;
+
+  //Render the stage to see the animation
+  renderer.render(stage);
+}
+
+//Start the game loop
+gameLoop();
+~~~
+
+Como se puede apreciar Pixi es un framework bastante potente para el desarrollo de juegos ya que nos proporciona una serie de métodos muy sencillos y potentes para el tratamiento de la parte que más recursos necesita de nuestro juego que son los gráficos.
+
+Enlaces de interés :
+
+* Documentación: [Métodos y documentación](http://pixijs.github.io/docs/)
+* Ejemplo: [Animaciones hechas con Pixijs](http://pixijs.github.io/examples/#/basics)
