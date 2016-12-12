@@ -14,25 +14,33 @@ Paquete de enrutado por excelencia de Meteor. Sencillo y potente. Permite al usu
 
 Este paquete trabaja tanto en el servidor como en el navegador y se ha diseñado específicamente para Meteor.
 
-#### Instalación del paquete
+**Instalación del paquete:**
+
 Para instalarlo sólo tenemos que ejecutar el siguiente comando en la terminal:
 
 ```bash
-$ meteor add iron:router
+meteor add iron:router
 ```
 
-## Elementos clave en el enrutamiento en Meteor:
+## Elementos clave en el enrutamiento en Meteor
+
 - **Routes**: Pieza de construcción básica del enrutamiento. Conjunto de instrucciones que le dicen a la aplicación a dónde ir y qué hacer cuando se encuentra la URL.
+
 - **Paths**: Dirección URL dentro de la aplicación. Dos tipos: estáticas y dinámicas. Pueden incluir parámetros de consulta.
+
 - **Segments**: Las diferentes partes de un path. Se encuentran separados por el delimitador */*.
+
 - **Hooks**: Se definen cómo aquellas acciones o procesos que se ejecutan antes, después o durante el proceso de enrutamiento. Ejemplos:
+
 - **Filters**: Acciones o Hooks globales para todas las rutas.
+
 - **Route Template**: Plantilla a la que apunta la ruta. En el caso de que no se indique una plantilla, Meteor busca una que tenga por nombre el de la ruta.
+
 - **Layouts**: Marco de contenido. Aquel contenido que visualizaremos siempre independientemente de la plantilla actual.
+
 - **Controllers**: Algunas veces, nos daremos cuenta de que muchas de nuestras plantillas utilizan los mismos parámetros. En lugar de duplicar el código, podemos dejar que todas estas rutas se hereden desde un solo controlador de enrutamiento que contendrá toda la lógica necesaria.
 
-
-#### Sintaxis de una ruta
+## Sintaxis de una ruta
 
 ```javascript
 Router.route('<path>', function()
@@ -61,6 +69,7 @@ Router.route('/home', function()
   }
 });
 ```
+
 ```javascript
 Router.route('/items/:_id', function(){
   var item = Item.findOne({_id: this.params._id});
@@ -72,7 +81,7 @@ Un aspecto muy interesante que tiene el router es una función o propiedad llama
 
 ## Mapeos de rutas a plantillas
 
-Además de construir los diseños a partir de plantillas fijas (*\{\{\> Libro \}\}*), es posible controlar el <body> de nuestras vistas indicando al router que apunte a una plantilla especial que contiene un ayudante **\{\{ \> yield \}\}**.
+Además de construir los diseños a partir de plantillas fijas (*\{\{\> Libro \}\}*), es posible controlar el < body > de nuestras vistas indicando al router que apunte a una plantilla especial que contiene un ayudante **\{\{ \> yield \}\}**.
 
 Básicamente, \{\{ \> yield \}\} permite definir una zona dinámica especial que mostrará automáticamente lo que corresponde a la ruta actual. De ahí que se conozca como "route template"(**plantilla de ruta**).
 
@@ -93,8 +102,11 @@ Router.route('/', {name: 'mostrandoLibros'})
 ```
 
 En primer lugar, se establece el template *baseLayout* como diseño predeterminado para todas las rutas.
+
 En segundo lugar, se ha creado una nueva ruta *mostrandoLibros* y se ha mapeado a */*.
+
 Como podemos observar además de definir la ruta */* le hemos dado un nombre: *mostrandoLibros*. El hecho de otorgar un nombre a la ruta permite utilizar algunas características de Iron Router que hacen que sea más fácil construir enlaces dentro de la aplicación.
+
 Entra en juego ahora el ayudante de **Spacebars**: \{\{ pathFor '<nombre_ruta>' \}\} . Este ayudante tiene por función devolver los componentes del **path** de cualquier ruta. Es realmente útil cuando, por ejemplo, cambiamos los paths de las rutas, lo cual utilizando \{\{ pathFor '<nombre_ruta>' \}\} es indiferente si conocemos el nombre que le hemos asignado a dicha ruta.
 
 ## Mejorando nuestras rutas
@@ -113,13 +125,14 @@ Ademas de los aspectos comentados, Meteor nos ofrece posibilidades y herramienta
 Básicamente, cualquier ruta necesita subscribirse a la publicación "libros" para poder que el renderizado de las plantillas sea correcto y muestren los datos correctamente, es decir, etamos seguro de que los datos van a estar siempre disponibles para el usuario.
 
 - **Carga de datos más amena**: Además, Meteor nos permite configurar una plantilla de carga que se visualice cuando el usuario accede a una ruta y los datos se encuentren en proceso de carga y renderizado.
+
 Para poder configurar una **plantilla de carga** necesitamos instalar el paquete spin ejecutando:
 
 ```bash
 meteor add sacha:spin
 ```
 
-*Plantilla de carga -> loading.html*
+*Plantilla de carga -> loading.html:*
 
 ```html
 <template name="loading">
@@ -128,6 +141,7 @@ meteor add sacha:spin
 ```
 
 *Configurando rutas y añadiendo plantilla de carga:*
+
 ```javascript
 Router.configure({
   layoutTemplate: 'baseLayout',
@@ -135,7 +149,9 @@ Router.configure({
   waitOn: function() { return Meteor.subscribe('libros')}
 });
 ```
+
 - **¿Y si no se encuentra la ruta especificada?**: Meteor nos permite configurar las rutas globalmente de modo que si el usuario intenta acceder a una ruta que no existe el usuario visualice una plantilla alternativa:
+
 ```html
 <template name="notFound">
   <div class="not-found page jumbotron">
@@ -144,11 +160,12 @@ Router.configure({
   </div>
 </template>
 ```
+
 ```javascript
-Router.configure({  
-  layoutTemplate: 'layout',  
-  loadingTemplate: 'loading',  
-  notFoundTemplate: 'notFound',  
+Router.configure({
+  layoutTemplate: 'layout',
+  loadingTemplate: 'loading',
+  notFoundTemplate: 'notFound',
   waitOn: function() { return Meteor.subscribe('posts'); };
 });
 ```

@@ -11,40 +11,43 @@ En definitiva, Spacebars es HTML y 3 aspectos más: inclusiones, expresiones y b
 - **Each**: Opera sobre un array o un cursor.
 
 Ejemplo:
+
 ```html
-  <template name="listaLibros">
-    <div class="libros">
-        {{ # each libros}}
-          Nombre: {{name}}, Autor: {{autor}}
-        {{/each}}
-    </div>
-  </template>
+<template name="listaLibros">
+  <div class="libros">
+      {{ # each libros}}
+        Nombre: {{name}}, Autor: {{autor}}
+      {{/each}}
+  </div>
+</template>
 ```
 
-¡IMPORTANTE!
-**Each** además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
+*IMPORTANTE*:
+
+- **Each** además de iterar los datos, establece el valor de **this** dentro del bloque al objeto que está siendo iterado.
 
 - **With o if/else**.
 
 Ejemplo:
-```html                                                                
-  <template name="listaLibros">               <template name="listaLibros">
-    <div class="libros">                         <div class="libros">
-      {{ # with libro}}                            {{ # if libro}}     
-        Nombre: {{name}}, Autor: {{autor}}          Nombre: {{name}}, Autor: {{autor}}       
-      {{else}}                                    {{else}}
-        No existe ningún libro                      No existe ningún libro  
-      {{/with}}                                   {{/if}}     
-    </div>                                        </div>  
-  </template>                                 </template>    
+
+```html
+<template name="listaLibros">               <template name="listaLibros">
+  <div class="libros">                         <div class="libros">
+    {{#with libro}}                            {{#if libro}}
+      Nombre: {{name}}, Autor: {{autor}}          Nombre: {{name}}, Autor: {{autor}}
+    {{else}}                                    {{else}}
+      No existe ningún libro                      No existe ningún libro
+    {{/with}}                                   {{/if}}
+  </div>                                        </div>
+</template>                                 </template>
 ```
 
 - **Unless**: Opuesto de if.
 
-
 Ejemplo:
+
 ```html
-<template name="pet">  
+<template name="pet">
    {{ # unless dog.sleeping}}
       {{dog.name}} is awake!
     {{else}}
@@ -56,6 +59,7 @@ Ejemplo:
 ## Inclusión en plantillas y usos
 
 Básicamente se trata de llamar a otra plantilla dentro de la actual para mostrar los datos. Las inclusiones avisan a Meteor que debe reemplazar la inclusión por la plantilla especificada.
+
 Ejemplo:
 
 ```html
@@ -77,6 +81,7 @@ En el siguiente ejemplo llamamos a la plantilla userList pasándole datos, en es
                                 {{/each}}
                               </template>
 ```
+
 En este caso, además, le pasamos nuevos parámetros distintos a los proveídos por el helper o controlador:
 
 ```html
@@ -94,18 +99,17 @@ Si queremos añadir comentarios a nuestras plantillas debemos incluir un signo d
 {{! Comentario }}
 ```
 
-
-## Creando plantillas.
+## Creando plantillas
 
 Es una buena política definir todas nuestras plantillas dentro de un directorio que creemos para tal fin, con el nombre "templates", por ejemplo. Este directorio lo ubicaremos dentro de **"client/"**.
 
-#### ¿Cómo encuentra las plantillas Meteor?
+**¿Cómo encuentra las plantillas Meteor?**
 
 Una de las ventajas de esta herramienta es su gran eficiencia a la hora de encontrar archivos. Independientemente del lugar dónde ubiquemos nuestra plantilla dentro del directorio "client/", Meteor la encontrará y renderizará los datos pertinentes.
 En este sentido, el programador se puede desentender totalmente de la necesidad de estar escribiendo manualmente rutas para que la aplicación encuentro los ficheros CSS o JavaScript.
 En definitiva, lo que importa en meteor es el **nombre del template**, no el nombre del fichero dónde se haya declarado la misma.
 
-## Ayudantes de plantillas.
+## Ayudantes de plantillas
 
 A diferencia de otros lenguajes, Meteor tiene las plantillas y la lógica de las mismas separadas. Es decir, las plantillas por sí solas no van a hacer nada.
 Es en este punto dónde intervienen los ayudantes de plantillas.
@@ -113,33 +117,33 @@ Mientras que las plantillas lo único que hacen es mostrar o iterar sobre variab
 
 Se suele tomar la política de llamar al ayudante de plantilla del mismo nombre que el fichero que contiene a ésta última salvo que la extensión cambia de .html a .js
 
-#### Sintaxis para declarar un ayudante de plantilla
+## Sintaxis para declarar un ayudante de plantilla
 
 Tomaremos como nombre de plantilla "listLibros", por ejemplo.
 
-*Código de ayudante de plantilla listLibros.js en client/templates*
+*Código de ayudante de plantilla listLibros.js en client/templates*:
+
 En el caso de que los datos sean dinámicos        En el caso de que los datos sean estáticos
 
-```javascript                             
+```javascript
 Template.listLibros.helpers({                     var BDLibros = [
   libros: return Libros.find();                   {
 });                                                   autor: "Juan",
                                                       name: "Aprendiendo Meteor"
                                                   });
-
                                                   Template.listLibros.helpers({
                                                     libros: BDLibros
-                                                  });                  
-```                     
+                                                  });
+```
 
-*Código de plantilla listLibros.html en client/templates*
+*Código de plantilla listLibros.html en client/templates*:
 
 ```html
 <template name="listLibros">                       <template name="listLibrosItem">
     <div class="libros">                            <div class="libro_item">
         {{ # each libros}}                               Autor:{{autor}}, Titulo: {{titulo}}
             {{> listLibrosItem}}                    </div>
-        {{/each}}                                  </template>  
+        {{/each}}                                  </template>
     </div>
 </template>
 ```

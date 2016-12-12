@@ -17,6 +17,7 @@ En este caso, por ejemplo, vamos a imprimir una lista de animales especificando 
 Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno puede abordar las plantillas y sus estilos como guste*):
 
 *Plantilla base. Fichero templates/post_animales.html*:
+
 ```html
 <template name="postsList">
   <div class="posts">
@@ -28,6 +29,7 @@ Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno pu
 ```
 
 *Plantilla postAnimalesItem. Fichero templates/post_animales_item.html*:
+
 ```html
 <template name="postItem">
   <div class="post">
@@ -39,6 +41,7 @@ Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno pu
 ```
 
 ## Configuramos los helpers
+
 Los helpers proveerán de datos a los templates, las cuales, sin estos no harían absolutamente nada. En este sentido, los helpers dotan de utilidad a las plantillas.
 
 *Fichero templates/post_animales.js*:
@@ -65,11 +68,13 @@ meteor remote autopublish
 ## Creamos y publicamos la colección Animales
 
 *Fichero server/main.js. Creando colección*:
+
 ```javascript
 Animales = new Mongo.Collection('animales');
 ```
 
 *Fichero server/publications.js*:
+
 ```javascript
 Meteor.publish('animales', function()
 {
@@ -107,6 +112,5 @@ if(Animales.find().count() === 0)
   //.........
 }
 ```
-
 
 **Podemos encontrar este ejemplo completo en Github haciendo click en el siguiente [enlace](https://github.com/JosueTC94/animalesMeteor.git).**

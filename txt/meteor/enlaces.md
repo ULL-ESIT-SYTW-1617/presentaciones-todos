@@ -12,16 +12,16 @@
 
 - Videotutorial para aprender a usar Meteor en 50 minutos
 
-{% youtube %}https://www.youtube.com/watch?v=vSFH1T3SnBY{% endyoutube %}
+{% youtube %}<https://www.youtube.com/watch?v=vSFH1T3SnBY>{% endyoutube %}
 
 - Videotutorial instalación Meteor
 
-{% youtube %}https://www.youtube.com/watch?v=l4u1a2h1S08{% endyoutube %}
+{% youtube %}<https://www.youtube.com/watch?v=l4u1a2h1S08>{% endyoutube %}
 
 - Videotutorial introducción a Meteor
 
-{% youtube %}https://www.youtube.com/watch?v=Pa5D1XKXQuo{% endyoutube %}
+{% youtube %}<https://www.youtube.com/watch?v=Pa5D1XKXQuo>{% endyoutube %}
 
 - Videotutorial explicativo de MongoDB.
 
-{% youtube %}https://www.youtube.com/watch?v=XhWkBI063PQ{% endyoutube %}
+{% youtube %}<https://www.youtube.com/watch?v=XhWkBI063PQ>{% endyoutube %}
