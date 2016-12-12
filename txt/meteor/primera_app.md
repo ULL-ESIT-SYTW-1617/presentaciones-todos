@@ -18,10 +18,10 @@ Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno pu
 
 *Plantilla base. Fichero templates/post_animales.html*:
 ```html
-<template name="postAnimales">
-  <div class="animales">
-    {{ # each animales}}
-      {{> postAnimalesItem}}
+<template name="postsList">
+  <div class="posts">
+    {{# each animales}}
+      {{> postItem}}
     {{/each}}
   </div>
 </template>
@@ -29,9 +29,11 @@ Podríamos crear las siguientes plantillas(*esto es libre, es decir, cada uno pu
 
 *Plantilla postAnimalesItem. Fichero templates/post_animales_item.html*:
 ```html
-<template name="postAnimalesItem">
-  <div class="animal-content">
-    Nombre: {{nombre}}, Tipo: {{tipo}}, Familia: {{familia}}
+<template name="postItem">
+  <div class="post">
+    <div class="animal-content">
+      Nombre: {{nombre}}, Tipo: {{tipo}}, Familia: {{familia}}
+    </div>
   </div>
 </template>
 ```
@@ -42,7 +44,7 @@ Los helpers proveerán de datos a los templates, las cuales, sin estos no haría
 *Fichero templates/post_animales.js*:
 
 ```javascript
-Meteor.postAnimales.helpers({
+Meteor.postsList.helpers({
   animales: function()
   {
     return Animales.find();
@@ -69,7 +71,7 @@ Animales = new Mongo.Collection('animales');
 
 *Fichero server/publications.js*:
 ```javascript
-Meteor.publish('ListAnimales', function()
+Meteor.publish('animales', function()
 {
   return Animales.find();
 });
@@ -80,7 +82,7 @@ Meteor.publish('ListAnimales', function()
 Pese a que el servidor haya publicado los datos, en el cliente se debe suscribir a la publicación correspondiente:
 
 ```javascript
-Meteor.subscribe('ListAnimales');
+Meteor.subscribe('animales');
 ```
 
 Si no hacemos esto no se mostrarán en el navegador cliente los datos.
@@ -93,15 +95,18 @@ Si se desea, puede hacer una carga inicial de animales en la base de datos de Mo
 if(Animales.find().count() === 0)
 {
   Animales.insert({
-    nombre: "Tigre",
-    familia: "Felinos",
-    tipo: "Mamífero carnívoro"
+    Nombre: "Tigre",
+    Familia: "Felinos",
+    Tipo: "Mamífero carnívoro"
   });
   Animales.insert({
-    nombre: "Tiburón",
-    familia: "Pez cartilaginoso",
-    tipo: "Carnívoro"
+    Nombre: "Tiburón",
+    Familia: "Pez cartilaginoso",
+    Tipo: "Carnívoro"
   });
   //.........
 }
 ```
+
+
+**Podemos encontrar este ejemplo completo en Github haciendo click en el siguiente [enlace](https://github.com/JosueTC94/animalesMeteor.git).**
