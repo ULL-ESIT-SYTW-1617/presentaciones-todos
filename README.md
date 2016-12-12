@@ -34,6 +34,21 @@ En este repositorio se almacenan por capítulos las distintas presentaciones de 
 4. Pasarle el lint al código (`npm run lint`)
 5. Hacer un pull request
 
+## Cómo actualizar tu fork
+
+A veces, cuando se hace un fork y se queda en una versión demasiado antigua del repo, podrían crearse conflictos entre los merges, así que es posible que tengas que actualizar tu fork.
+
+```bash
+git remote add upstream https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git checkout <Tu Nombre>
+git merge master
+```
+
+Si algo no te funciona correctamente, añádeme como colaborador a tu fork ([@DanielRamosAcosta](https://github.com/DanielRamosAcosta)) y te ayudo a solucionar los conflictos.
+
 ## Normas generales
 
 1. En el README de cada uno, tiene que haber un `#` al principio con el título de la presentación, y dos listas (`*`) con el autor y la fecha.

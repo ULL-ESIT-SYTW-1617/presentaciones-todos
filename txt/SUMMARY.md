@@ -23,7 +23,18 @@
 * [Bootstrap](bootstrap/README.md)
 
 * [Canvas](canvas/README.md)
-
+  * [1. Introducción](canvas/introduccion.md)
+  * [2. Estructura inicial](canvas/estructura_inicial.md)
+  * [3. Líneas y curvas](canvas/lineas_curvas.md)
+  * [4. Texto](canvas/texto.md)
+  * [5. Imágenes](canvas/imagenes.md)
+  * [6. Figuras y Formas geométricas](canvas/figuras_formas.md)
+  * [7. Composiciones](canvas/composiciones.md)
+  * [8. Animaciones](canvas/animaciones.md)
+  * [9. Inconvenientes](canvas/inconvenientes.md)
+  * [10. Movimiento](canvas/ojos_github.md)
+  * [11. ¿Cómo dibujar un reloj en canvas?](canvas/reloj.md)
+  * [12. Más ejemplos y enlaces de interés](canvas/referencias.md)
 * [Cloud 9](cloud-9/README.md)
 
 * [Edición de vídeo](edicion-de-video/README.md)
@@ -45,7 +56,15 @@
 * [Materialize](materialize/README.md)
 
 * [Meteor](meteor/README.md)
-
+  * [1. Meteor](meteor/introduccion.md)
+  * [2. Instalando Meteor](meteor/instalando.md)
+  * [3. Consolas de Meteor](meteor/consolas.md)
+  * [4. Plantillas en Meteor](meteor/plantillas.md)
+  * [5. Colecciones en Meteor](meteor/collections.md)
+  * [6. Construyendo una app](meteor/primera_app.md)
+  * [7. Rutas en Meteor](meteor/rutas.md)
+  * [8. Guía de comandos Meteor](meteor/guia_comandos.md)
+  * [9. Enlaces y recursos de interés](meteor/enlaces.md)
 * [Parallax y Materialize 2](parallax-y-materialize-2/README.md)
 
 * [PhantomJS](phantomjs/README.md)
