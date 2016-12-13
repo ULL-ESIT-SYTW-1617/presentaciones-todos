@@ -6,7 +6,7 @@ Al igual que con Pixijs también es necesario tener corriendo un servidor para p
 
 Sin embargo si es posible probar la ejecución del juego en c9 y codepen y otros servicios similares.
 
-# Instalación
+## Instalación
 
 Phaser permite la instalación de diversas formas:
 
@@ -43,9 +43,17 @@ O bien mediante la línea usando bower o nodejs:
 
   Phaser te ofrece un IDE para crear juegos con su framework con todas las herramientas esenciales para el desarrollo de juegos multi plataforma, aunque hay que decir que no es gratuito, cuesta 30$
 
-#
+## Características
 
-# Ejemplos Utilización del framework
+* Phaser utiliza tanto Canvas como WebGL internamente y cambia entre uno u otro en función de las características del navegador. Esto permite renderizar de forma rápida tanto en móvil como en pc. Además hace uso de la librería Pixi.js para un mejor renderizado.
+* La precarga de recursos se realiza en tan solo una línea de código.
+* Utiliza su propio sistema Arcade Physics. Un librería ligera, perfecta para dispositivos poco potentes, con una respuesta veloz a las colisiones. Control de velocidad, acelaración, rebotes, arrastres y control total de colisiones.
+* Permite multitud de opciones  para el uso de sprites.
+* Permite de opciones de dispositivos de entrada como ratón, teclado, toques en pantallas táctiles. Multigestos y reconocimiento de gestos personalizados
+* Phaser soporta Audio Web y directamente Audio HTML.
+* Phaser puede cargar, renderizar y hacer colisionar el mapa de cuadros (o tilemap) con unas simples líneas de código. Soporte de CSV y TiledMap con múltiples capas.
+
+## Ejemplos Utilización del framework
 
 En primer lugar debemos añadir a la cabecera de nuestro archivo html la librería phaser.js en cualquiera de sus versiones:
 
@@ -149,3 +157,31 @@ A continuación se puede ver un ejemplo de creación de un personaje de un juego
 Otra función importante que nos explicar es la función update que es llamada por el game loop cada frame ahí es donde pondremos el código de funcionamiento de nuestro juego. Un ejemplo de una función que influirá en el funcionamiento del juego serán las colisiones entre el personaje y otros actores del juego que serán detectadas de la siguiente forma:
 
 ~~~javascript
+function update() {
+    //  Collide the player and the stars with the platforms
+    var hitPlatform = game.physics.arcade.collide(player, platforms);
+
+}
+~~~
+
+Otra función importante en nuestro juego será la forma de interactuar que tenga el usuario con el juego una forma de realizar esta tarea sería mediante la adición de un elemnto de entrada como sería un teclado:
+
+~~~javascript
+cursors = game.input.keyboard.createCursorKeys();
+~~~
+
+Un ejemplo de como hacer que nuestro personaje se moviera en función de la tecla que presiones en el teclado sería la siguiente:
+
+~~~javascript
+//  Reset the players velocity (movement)
+    player.body.velocity.x = 0;
+
+    if (cursors.left.isDown{
+        //  Move to the left
+        player.body.velocity.x = -150;
+
+        player.animations.play('left');
+    }
+~~~
+
+Como se puede apreciar en los ejemplos Phaser nos proporciona un serie de métodos que nos facilitan mucho la tarea de desarrollar un juego, es por ello por lo que es considerado como uno de los mejores frameworks gratuitos para el desarrollos de videjuegos en javascript.

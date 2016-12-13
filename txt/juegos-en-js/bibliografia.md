@@ -15,5 +15,5 @@ Pixi js:
 Phaser :
 
 * Ejemplo: [Juego hecho con Phaser](http://codepen.io/photonstorm/pen/PwOjPr?editors=001)
-* [Juegos hechos](http://pgl.ilinov.eu/) 
-* [Juego hecho ](http://codepen.io/photonstorm/pen/NPMRaq?editors=001)
+* [Juegos hechos con Phaser](http://pgl.ilinov.eu/)
+* [Juego hecho con Phaser](http://codepen.io/photonstorm/pen/NPMRaq?editors=001)
