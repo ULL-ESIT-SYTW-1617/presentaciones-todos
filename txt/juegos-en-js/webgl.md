@@ -4,7 +4,7 @@
 
 OpenGl es un estandar que define una API multilenguaje y multiplataforma para escribir aplicaciones con gráficos en 2d o 3d. Tiene más de 250 funciones diferentes que pueden usarse para dibujar escenas tridimensionales complejas a partir de primitivas simples como pueden ser puntos líneas a triángulos, es por ello que es muy usada en realidad virtual y en el desarrollo de videojuegos.
 
-A partir de este estandar de especificaciones los fabricantes de hardware crean implementaciones, que son bibliotecas de funciones que se ajustan a los requisitos de la especificación, utilizando aceleración hardware cuando es posible.
+A partir de este estándar de especificaciones los fabricantes de hardware crean implementaciones, que son bibliotecas de funciones que se ajustan a los requisitos de la especificación, utilizando aceleración hardware cuando es posible.
 
 OpenGl tiene dos propósitos iniciales que son:
 

@@ -11,3 +11,9 @@ Pixi js:
 * Documentación: [Métodos y documentación](http://pixijs.github.io/docs/)
 * Ejemplo: [Animaciones hechas con Pixijs](http://pixijs.github.io/examples/#/basics)
 * Tutorial: [Turial Pixi.js](https://github.com/kittykatattack/learningPixi.git)
+
+Phaser :
+
+* Ejemplo: [Juego hecho con Phaser](http://codepen.io/photonstorm/pen/PwOjPr?editors=001)
+* [Juegos hechos](http://pgl.ilinov.eu/) 
+* [Juego hecho ](http://codepen.io/photonstorm/pen/NPMRaq?editors=001)

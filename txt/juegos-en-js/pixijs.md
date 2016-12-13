@@ -186,3 +186,4 @@ Enlaces de interés :
 
 * Documentación: [Métodos y documentación](http://pixijs.github.io/docs/)
 * Ejemplo: [Animaciones hechas con Pixijs](http://pixijs.github.io/examples/#/basics)
+* Ejemplo: [Juego hecho en Pixi.js](http://www.emanueleferonato.com/2014/02/26/complete-html5-concentration-game-made-with-pixi-js/)
