@@ -49,7 +49,7 @@ O bien mediante la línea usando bower o nodejs:
 * La precarga de recursos se realiza en tan solo una línea de código.
 * Utiliza su propio sistema Arcade Physics. Un librería ligera, perfecta para dispositivos poco potentes, con una respuesta veloz a las colisiones. Control de velocidad, acelaración, rebotes, arrastres y control total de colisiones.
 * Permite multitud de opciones  para el uso de sprites.
-* Permite de opciones de dispositivos de entrada como ratón, teclado, toques en pantallas táctiles. Multigestos y reconocimiento de gestos personalizados
+* Permite multitud de opciones de dispositivos de entrada como ratón, teclado, toques en pantallas táctiles. Multigestos y reconocimiento de gestos personalizados
 * Phaser soporta Audio Web y directamente Audio HTML.
 * Phaser puede cargar, renderizar y hacer colisionar el mapa de cuadros (o tilemap) con unas simples líneas de código. Soporte de CSV y TiledMap con múltiples capas.
 
