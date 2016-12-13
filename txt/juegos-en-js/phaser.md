@@ -37,7 +37,7 @@ O bien mediante la línea usando bower o nodejs:
   ~~~
 
   ~~~HTML
-  <!minified version>
+  <!--minified version-->
   <script src=""//cdn.jsdelivr.net/phaser/2.6.2/phaser.js""></script>
   ~~~
 
