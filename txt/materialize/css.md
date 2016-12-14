@@ -19,7 +19,6 @@ Materialize nos ofrece una gran paleta de colores, donde podemos elegir los que 
                     <li><a class="grey-text text-lighten-3" href="https://github.com/ULL-ESIT-SYTW-1617/presentaciones-todos.git">Repositorio Presentación</a></li>
                     <li><a class="grey-text text-lighten-3" href="https://ull-esit-sytw-1617.github.io/presentaciones-todos/">Book Presentación</a></li>
                     <li><a class="grey-text text-lighten-3" href="http://alu0100767421.github.io/">Alexander Cole Mora</a></li>
-                    
                 </ul>
             </div>
         </div>
@@ -32,9 +31,8 @@ Materialize nos ofrece una gran paleta de colores, donde podemos elegir los que 
     </div>
 </footer>
 ```
+
 Aquí estamos diciendo que el **footer** va a tener el color **#212121 grey darken-2**
-
-
 
 ## Class Container
 
@@ -48,20 +46,20 @@ Disponemos una class container que nos permite centrar el contenido de la págin
             </div>
         </div>
     </div>
-    
 ```
 
-
-## Imágenes y vídeos 
+## Imágenes y vídeos
 
 Las imágenes y los vídeos en Materialize, son responsivos. Añadimos la clase predefinida y conseguiremos que se adapte a las diferentes pantallas.
-
 Para las imágenes debemos de poner la class **responsive-img**
+
 ```html
 <img class="responsive-img" src="ruta_imagen">
 ```
+
 Para los vídeos, tenemos dos opciones:
-* Youtube 
+
+* Youtube
 
 ```html
 <div class="video-container">
@@ -92,7 +90,6 @@ Esta sería una tabla básica de Materialize. Hay muchas opciones, simplemente b
            <th data-field="country">País</th>
        </tr>
    </thead>
-   
    <tbody>
        <tr>
            <td>Assasin Creed</td>
@@ -128,7 +125,6 @@ Tenemos tres formas de alinear: **centrado**, **izquierda** y **derecha**
   <h5 class="center-align">Se alinea al centro</h5>
 </div>
 ```
-
 
 ## Sombras
 

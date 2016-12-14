@@ -4,7 +4,7 @@ Debemos de **descargar** la versión de materialize que deseamos. Nos ofrecen do
 
 Si descargamos la versión estándar, tendremos la siguiente estructura:
 
-```
+``
  Website
   /css
   --materialize.css
@@ -12,12 +12,11 @@ Si descargamos la versión estándar, tendremos la siguiente estructura:
   --/roboto
   /js
   --materialize.js
-```
+``
 
 También podemos utilizar un instalador de paquetes como `npm` o `bower`.
 
-
-##Configuración
+## Configuración
 
 Ahora toca crear nuestra página. Creamos nuestro primer fichero html. En la página de materialize podemos encontrar una plantilla. Podemos copiarla, pero atención, en el primer link del head, añade una "s" al http, si no tendrás un error. La plantilla correcta sería la siguiente:
 
@@ -41,4 +40,3 @@ Ahora toca crear nuestra página. Creamos nuestro primer fichero html. En la pá
   </body>
 </html>
 ```
-

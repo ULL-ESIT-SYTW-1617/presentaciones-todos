@@ -7,6 +7,7 @@ Por ejemplo, para poner un parráfo de color rojo, hacemos lo siguiente:
 ```html
 <p class="#f44336 red">Este parráfo ha cambiado de color de fondo</p>
 ```
+
 Utilizamos la clase `#f44336 red` que nos ofrece Materialize para cambiar el color.
 
 ## Las columnas viven en las filas
@@ -32,13 +33,13 @@ Disponemos además, tres diferentes tamaños dependiendo del tamaño de pantalla
         </div>
         <div class="col s12 m4 l4">
             <p>
-            Disponemos de 12 diferentes particiones que podemos administrar como queramos. Por ejemplo, 
+            Disponemos de 12 diferentes particiones que podemos administrar como queramos. Por ejemplo,
             podemos dividir una fila en 12,11,10,9,...1 columnas.
             </p>
         </div>
         <div class="col s12 m4 l4">
             <p>
-            Disponemos además, tres diferentes tamaños dependiendo del tamaño de pantalla. Tenemos s(small), 
+            Disponemos además, tres diferentes tamaños dependiendo del tamaño de pantalla. Tenemos s(small),
             m(medium) y l(large).
             </p>
         </div>

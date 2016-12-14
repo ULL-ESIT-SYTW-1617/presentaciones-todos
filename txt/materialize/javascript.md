@@ -4,7 +4,7 @@ Materialize nos ofrece una gran variedad de opciones para añadir a nuestra web.
 
 En este caso, hemos puesto dos ejemplo:
 
-## Ampliación de imagen:
+## Ampliación de imagen
 
 Al pinchar sobre la imagen, aumentará su tamaño
 

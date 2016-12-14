@@ -2,12 +2,12 @@
 
 Disponemos de diferentes componentes para añadir a nuestra página web. Botones, notificaciones, caminos, tarjetas, etiquetas, formularios,...
 
-
 ## Notificaciones
 
 ```html
 <h6>notificacion <span class="new badge black">10</span></h6>
 ```
+
 Podemos cambiar el color a la notificacion, cambiando **black** por otro color.
 
 ## Botones
@@ -63,7 +63,8 @@ Algunos ejemplo:
     </div>
 </div>
 ```
-## Formularios 
+
+## Formularios
 
 ```html
 <form class="col s12">
@@ -86,7 +87,7 @@ Algunos ejemplo:
 </form>
 ```
 
-## Iconos 
+## Iconos
 
 Tenemos un gran abanico de iconos. Podemos elegir diferentes tamaños (tiny, small, medium, large) y colores.
 
@@ -100,5 +101,3 @@ Tenemos un gran abanico de iconos. Podemos elegir diferentes tamaños (tiny, sma
     </div>
 </div>
 ```
-
-

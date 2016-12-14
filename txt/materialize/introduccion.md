@@ -7,11 +7,13 @@ En este apartado, trataremos sobre que es Materialize, sus características, qu�
 Materialize es un **framework** Front-End para el **desarrollo web**. Nos permite desarrollar páginas web con gran facilidad a través de **HTML5**, **CSS** y **JAVASCRIPT**. Está basado en **Material Design**.
 
 ### Desarrollo
+
 Materialize ha sido desarrollado por estudiantes de la **Universidad Carnegie Mello** (Pittsburgh, Pensilvania, EEUU). El **MIT** posee su licencia.
 
 ### Características
 
 #### Sencillez
+
 Materialize consigue ofrecer una gran falicidad para realizar muchas opciones. Hay que disponer de un principio de ideas básicas de programación en HTML5, CSS y JAVASCRIPT. Simplemente debemos de seguir las instrucciones que están disponibles en su servicio web.
 
 #### Responsive
@@ -21,7 +23,6 @@ Sin duda, una gran virtud, es que orienta todo a la responsividad. Consigue que 
 #### Variedad
 
 Este framework ofrece una gran cantidad de elementos para introducir en nuestra web. Colores, barras de menú, botones, javascript,... Simplemente hay que buscarlas y añadirlas a nuestra aplicación. Además, todo se puede encontrar en su propia página Página de Materialize.
-
 
 ## Material Design
 
