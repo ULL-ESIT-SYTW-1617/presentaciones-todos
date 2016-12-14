@@ -3,7 +3,14 @@
 * [Angular](angular/README.md)
 
 * [APIs de JS](apis-de-js/README.md)
-
+  * [1. API de dragdAndDrop](apis-de-js/drag_drop.md)
+  * [2. La API de geolocalización en JavaScript](apis-de-js/geolocation.md)
+  * [3. Web Speech API](apis-de-js/speech.md)
+  * [4. API de almacenamiento local](apis-de-js/localStorage.md)
+  * [5. APIS de audio, video y notificaciones](apis-de-js/audio_video_notificaciones.md)
+  * [6. API de Dispositivos](apis-de-js/dispositivos_moviles.md)
+  * [7. NodeJS API](apis-de-js/node_api.md)
+  * [8. Google API](apis-de-js/google_api.md)
 * [Audio y Vídeo en JS](audio-y-video-en-js/README.md)
 
 * [Babel ES6, ES7 y ES8](babel-es6-es7-y-es8/README.md)
@@ -33,7 +40,7 @@
   * [8. Animaciones](canvas/animaciones.md)
   * [9. Inconvenientes](canvas/inconvenientes.md)
   * [10. Movimiento](canvas/ojos_github.md)
-  * [11. ¿Cómo dibujar un reloj en canvas?](canvas/reloj.md)
+  * [11. Cómo dibujar un reloj en canvas](canvas/reloj.md)
   * [12. Más ejemplos y enlaces de interés](canvas/referencias.md)
 * [Cloud 9](cloud-9/README.md)
 
