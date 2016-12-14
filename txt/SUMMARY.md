@@ -57,11 +57,21 @@
 * [Graphics](graphics/README.md)
 
 * [Juegos en JS](juegos-en-js/README.md)
-
+  * [1. Canvas en videjuegos](juegos-en-js/canvas.md)
+  * [2. OpenGl y WebGl](juegos-en-js/webgl.md)
+  * [3. Pixi js](juegos-en-js/pixijs.md)
+  * [4. Phaser](juegos-en-js/phaser.md)
+  * [5. Bibliografía](juegos-en-js/bibliografia.md)
 * [Laravel](laravel/README.md)
 
 * [Materialize](materialize/README.md)
-
+  * [1. Introducción Materialize](materialize/introduccion.md)
+  * [2. Comenzando a utilizar Materialize](materialize/comenzando.md)
+  * [3. Funcionamiento](materialize/funcionamiento.md)
+  * [4. CSS](materialize/css.md)
+  * [5. Componentes](materialize/componentes.md)
+  * [6. Menú y Footer](materialize/menufooter.md)
+  * [7. Javascript](materialize/javascript.md)
 * [Meteor](meteor/README.md)
   * [1. Meteor](meteor/introduccion.md)
   * [2. Instalando Meteor](meteor/instalando.md)

@@ -3,19 +3,15 @@
 Debemos de **descargar** la versión de materialize que deseamos. Nos ofrecen dos, la **estándar** y otra con fuente con Sass. Descomprimimos el paquete y tendremos las siguientes carpetas: css, js y fonts. Esta estructura es básica. En ellos, tendremos los ficheros propios de materialize, a los que nosotros podemos añadir los que queramos. Es recomendable no tocar estos ficheros.
 
 Si descargamos la versión estándar, tendremos la siguiente estructura:
-<!-- markdownlint-disable MD040 -->
 
-```
- Website
-  /css
-  --materialize.css
-  /fonts
-  --/roboto
-  /js
-  --materialize.js
-```
+    Website
+     /css
+     --materialize.css
+     /fonts
+     --/roboto
+     /js
+     --materialize.js
 
-<!-- markdownlint-enable MD040 -->
 También podemos utilizar un instalador de paquetes como `npm` o `bower`.
 
 ## Configuración
