@@ -106,6 +106,7 @@ Shopify.delete('/admin/discounts/#{id}.json', function(err, data, headers){
 ## Liquid
 
 Liquid es esencial para hacer el mejor uso de Shopify, en Liquid nos podemos encontrar dos tipos de tags: De Texto y Lógicos.
+
 * Tags de texto (que pueden devolver texto) están envueltos por {{ llaves dobles de apertura y cierre (se ven así) }}
 * Tags lógicos (que nunca devuelven texto) están envueltos por{% llave y porcentaje de apertura y cierre (se ven así) %}
 
@@ -138,6 +139,7 @@ Esto es un simple ejemplo, teniendo un lenguaje similar a los ya frecuentados en
   {% include 'related-products' %}
 </div>
 ```
+
 El ejemplo anterior, visualmente aporta lo siguiente:
 
 ![Pop_up_window](img/img11.png)
