@@ -141,3 +141,5 @@ Esto es un simple ejemplo, teniendo un lenguaje similar a los ya frecuentados en
 El ejemplo anterior, visualmente aporta lo siguiente:
 
 ![Pop_up_window](img/img11.png)
+
+Por Aitor Bernal Falcón utilizando [esta presentación.](https://docs.google.com/presentation/d/1XYNEGRDBkWOTlBVp8MwLQzGtYB4JGJCoTWTQy8STa98/edit?usp=sharing)
