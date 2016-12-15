@@ -1,4 +1,4 @@
-# 3. ¿Como instalar Bootstrap?
+# 3. Cómo instalar Bootstrap
 
 Existen tres tipos de descargas:
 
@@ -13,7 +13,6 @@ Incluye el código fuente: Less, JavaScript y demás ficheros. __Requiere un com
 * __Sass__
 
 Bootstrap exportado de Less a Sass para una __fácil inclusión__ en Rails, Compass o proyectos "Sass-only"
-
 
 Para la mayoria de usuarios el primer tipo de descarga será la mejor opción.
 

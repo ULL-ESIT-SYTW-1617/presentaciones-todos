@@ -1,4 +1,4 @@
-# 2. ¿Por qué Bootstrap?
+# 2. Por qué Bootstrap
 
 * Usabilidad
 

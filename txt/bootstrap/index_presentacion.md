@@ -2,7 +2,7 @@
 
 A continuación adjunto el código que he generado durante la presentación con ejemplos de los componentes más utilizados y que personalmente veo de más utilidad:
 
-~~~
+~~~~.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -156,5 +156,4 @@ A continuación adjunto el código que he generado durante la presentación con 
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-~~~
+~~~~
