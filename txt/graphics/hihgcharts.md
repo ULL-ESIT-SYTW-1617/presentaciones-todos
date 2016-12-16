@@ -163,3 +163,5 @@ y: 0.2
 ```
 
 [Página con ejemplos de como desarollar la estructura](http://api.highcharts.com/highcharts/chart)
+
+[Pequeños ejemplos de prueba](https://github.com/ULL-ESIT-SYTW-1617/presentaciongraphics/settings)
