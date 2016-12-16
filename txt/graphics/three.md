@@ -117,3 +117,5 @@ render();
 
 [Página con ejemplos de como desarollar la estructura](https://threejs.org/examples/)
 Una vez en la página para ver el código le damos a view source
+
+[Pequeños ejemplos de prueba](https://github.com/ULL-ESIT-SYTW-1617/presentaciongraphics/settings)
