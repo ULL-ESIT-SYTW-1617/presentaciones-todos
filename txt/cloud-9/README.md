@@ -70,7 +70,7 @@ $ mysql-ctl cli
 
 ```
 
-###A continuación, puede conectarse a la base de datos con los siguientes parámetros:
+###A continuación, vemos como puede conectarse a la base de datos con los siguientes parámetros:
 
 _Nombre de host_ - $IP(La misma IP local ya que la aplicación se ejecuta en Cloud9)
 _Puerto_ - 3306(El número de puerto por defecto de MySQL)
