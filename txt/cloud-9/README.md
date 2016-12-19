@@ -115,9 +115,13 @@ mysql> show tables;
 ##Soporte para los siguientes repositorios de código: 
 
 *GitHub
+
 *Bitbucket
+
 *Repositorios Mercurial
+
 *Repositorios Git
+
 *Servidores FTP
 
 Cloud 9 nos permite conectar con distintos repositoriosde cógido. Ésto lo hace por medio de la clave ssh que nos proporciona este IDE.
