@@ -127,4 +127,4 @@ mysql> show tables;
 Cloud 9 nos permite conectar con distintos repositoriosde cógido. Ésto lo hace por medio de la clave ssh que nos proporciona este IDE.
 
 
-![ssh](images/ssh.png "ssh")
+![ssh](images/ssh1.png "ssh")
