@@ -41,3 +41,72 @@ En cuanto a funcionalidades del editor de código, son equiparables a los editor
 
 
 ![Historico](images/historico.png "Historico")
+
+##Trabajo en equipo
+
+Se puede crear un "workspace" o proyecto y compartirlo con otros usuarios de Cloud 9. A partir de entonces podemos compartir no sólo el código de los archivos del servidor, sino también la consola de comandos.
+
+Cuando una persona accede a un archivo abierto por otro componente del equipo de trabajo encontrarás que se ven dos cursores en el código. Uno es el tuyo y otro es el de las otras personas que lo tengan abierto. Podéis escribir código ambos al mismo tiempo! con lo que verás los cambios que estás haciendo en el documento y los que está haciendo tu compañero en tiempo real. Es ideal para hacer "pair programming".
+
+
+![Compartir](images/compartir.png "Compartir")
+
+
+Otra de las ventajas es que podemos lanzar nuestros comandos y ver los resultados de los comandos lanzados por nuestros compañeros en el mismo espacio de trabajo.También puedes compartir con tus compañeros mensajes en el chat integrado que podemos observar a la derecha de la imagen.
+
+
+##Acceso a MySQL 
+
+En Cloud 9 podemos usar MySQL. A continuación se explica nuestra primera iteración de soporte de MySQL en Cloud9. Esto hace que sea muy fácil de instalar, iniciar y detener una instancia de MySQL justo en su espacio de trabajo. Lo bueno es que cada espacio de trabajo se ejecutará una base de datos independiente para que sus proyectos no interferirán entre sí. Puede controlar MySQL con la mysql-ctl herramienta de línea de comandos ejecutar desde el terminal :
+
+```
+# start MySQL. Will create an empty database on first start
+$ mysql-ctl start
+
+# stop MySQL
+$ mysql-ctl stop
+
+# run the MySQL interactive shell
+$ mysql-ctl cli
+
+```
+
+###A continuación, puede conectarse a la base de datos con los siguientes parámetros:
+
+_Nombre de host_ - $IP(La misma IP local ya que la aplicación se ejecuta en Cloud9)
+_Puerto_ - 3306(El número de puerto por defecto de MySQL)
+_Usuario_ - $C9_USER(Su nombre de usuario Cloud9)
+_Contraseña_ - "" (sin contraseña ya que sólo se puede acceder a la base de datos desde dentro del área de trabajo)
+_Base de datos_ - c9(El nombre de usuario de base de datos)
+Para verificar su nombre de host, puede conectarse a la CLI mysql y mostrar el host ejecutando los siguientes comandos:
+
+
+```
+mysql-ctl cli
+```
+
+###Una vez conectado a la carcasa MySQL, ejecute lo siguiente:
+
+```
+select @@hostname;
+```
+
+##Importación de datos en su base de datos
+
+Para importar los datos existentes en su base de datos de ejecución siguientes comandos:
+```
+mysql-ctl cli
+```
+
+Ahora se encuentra en el entorno de MySQL y puede comenzar la importación:
+
+```
+mysql> use c9
+
+mysql> source PATH_TO_SQL_FILE.sql
+```
+Para comprobar que todo se puso de ejecución importados:
+
+```
+mysql> show tables;
+```
