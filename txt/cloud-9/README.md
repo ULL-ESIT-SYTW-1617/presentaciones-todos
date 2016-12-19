@@ -82,6 +82,7 @@ Para verificar su nombre de host, puede conectarse a la CLI mysql y mostrar el h
 
 ```
 mysql-ctl cli
+
 ```
 
 ###Una vez conectado a la carcasa MySQL, ejecute lo siguiente:
@@ -109,3 +110,17 @@ Para comprobar que todo se puso de ejecución importados:
 ```
 mysql> show tables;
 ```
+
+
+##Soporte para los siguientes repositorios de código: 
+
+*GitHub
+*Bitbucket
+*Repositorios Mercurial
+*Repositorios Git
+*Servidores FTP
+
+Cloud 9 nos permite conectar con distintos repositoriosde cógido. Ésto lo hace por medio de la clave ssh que nos proporciona este IDE.
+
+
+![ssh](images/ssh.png "ssh")
