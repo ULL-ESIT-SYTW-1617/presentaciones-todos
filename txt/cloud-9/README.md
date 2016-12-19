@@ -1,9 +1,8 @@
-# Cloud 9
+# Cloud 9 - Presentación 
 
 * Autor: [Edna Liliana Galiano Camacho](https://github.com/alu0100762846)
 * Fecha: 09/12/2016
-* Presentación: [Cloud 9](./index.html)
-* 
+ 
 
 ![Cloud 9](images/cloud9.png "Cloud 9")
 
