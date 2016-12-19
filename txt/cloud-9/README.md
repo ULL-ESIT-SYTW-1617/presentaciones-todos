@@ -36,7 +36,7 @@ Acceso a la consola de comandos del servidor, la consola Linux, donde podremos i
 ![Ejemplo](images/ejemplo.png "Ejemplo")
 
 
-En cuanto a funcionalidades del editor de código, son equiparables a los editores offline, con ayudas contextuales a la programación inteligentes, gestión de varios archivos al mismo tiempo, depurador de código, atajos de teclado, personalización del editor, previsualización de tu código en marcha, etc. Incluso tiene algunas funcionalidades que no encuentras en los editores de código habitualmente, como un histórico de las versiones de tus archivos, a lo largo en los guardados o un sencillo editor de imágenes online.
+En cuanto a funcionalidades del editor de código, son equiparables a los editores offline, con ayudas contextuales a la programación inteligentes, gestión de varios archivos al mismo tiempo, depurador de código, atajos de teclado, personalización del editor, previsualización de tu código en marcha, etc. Incluso tiene algunas funcionalidades que no encuentras en los editores de código habitualmente, como un histórico de las versiones de tus archivos (a lo largo de los puntos "los guardados") o un sencillo editor de imágenes online.
 
 
 ![Historico](images/historico.png "Historico")
