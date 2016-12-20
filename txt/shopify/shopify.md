@@ -107,8 +107,8 @@ Shopify.delete('/admin/discounts/#{id}.json', function(err, data, headers){
 
 Liquid es esencial para hacer el mejor uso de Shopify, en Liquid nos podemos encontrar dos tipos de tags: De Texto y Lógicos.
 
-* Tags de texto (que pueden devolver texto) están envueltos por {{ llaves dobles de apertura y cierre (se ven así) }}
-* Tags lógicos (que nunca devuelven texto) están envueltos por{% llave y porcentaje de apertura y cierre (se ven así) %}
+* Tags de texto (que pueden devolver texto) están envueltos por {% raw %}`{{`{% endraw %} llaves dobles de apertura y cierre (se ven así) {% raw %}`}}`{% endraw %}
+* Tags lógicos (que nunca devuelven texto) están envueltos por {% raw %}`{%`{% endraw %} llave y porcentaje de apertura y cierre (se ven así) {% raw %}`%}`{% endraw %}
 
 ***Ejemplo de if/else con Liquid***
 
