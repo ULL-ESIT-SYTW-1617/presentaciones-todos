@@ -63,7 +63,8 @@
   * [8. Códecs](edicion-de-video/codecs.md)
   * [9. Bibliografía](edicion-de-video/bibliografia.md)
 * [Graphics](graphics/README.md)
-
+  * [1. Highcharts](graphics/hihgcharts.md)
+  * [2. Threejs](graphics/three.md)
 * [Juegos en JS](juegos-en-js/README.md)
   * [1. Canvas en videjuegos](juegos-en-js/canvas.md)
   * [2. OpenGl y WebGl](juegos-en-js/webgl.md)
