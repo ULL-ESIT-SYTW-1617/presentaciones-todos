@@ -1,7 +1,11 @@
 # Índice de Presentaciones
 
 * [Angular](angular/README.md)
-
+  * [1. Introduccion AngularJS](angular/introduccion.md)
+  * [2. Dificultades](angular/dificultades.md)
+  * [3. Fundamentos de Angular 2](angular/fundamentos.md)
+  * [4. Interacciones](angular/angulartwo.md)
+  * [5. Angular Cli](angular/cli.md)
 * [APIs de JS](apis-de-js/README.md)
   * [1. API de dragdAndDrop](apis-de-js/drag_drop.md)
   * [2. La API de geolocalización en JavaScript](apis-de-js/geolocation.md)
@@ -110,7 +114,7 @@
 * [React](react/README.md)
 
 * [Shopify](shopify/README.md)
-  * [1. El comercio electónico](shopify/INTRODUCCION.md)
-  * [2. Ventajas](shopify/VENTAJAS.md)
-  * [3. Principales plataformas de E-Comerce](shopify/PLATAFORMAS.md)
-  * [4. Shopify](shopify/SHOPIFY.md)
+  * [1. El comercio electónico](shopify/introduccion.md)
+  * [2. Ventajas](shopify/ventajas.md)
+  * [3. Principales plataformas de E-Comerce](shopify/plataformas.md)
+  * [4. Shopify](shopify/shopify.md)
